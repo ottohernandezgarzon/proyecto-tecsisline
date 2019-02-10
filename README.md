@@ -48,3 +48,9 @@ Beneficia a gran parte de la población pues hoy día los equipos de cómputo no
 - ¿Le gustaría que el soporte se ofreciera las 24 horas?
 - ¿Le gustaría que exista servicio técnico para servidores?
 - ¿Tiene alguna duda sobre la opción de soporte en la página web? ¿cual?
+## Participantes
+- Otoniel Hernández Garzón      hernandezottto@misena.edu.co
+- Anderson Stiven Yaguma Diaz   ayaguma@misena.edu.co
+- Jhostin David Cespedes Campo  jdcespedes8@misena.edu.co
+- Lizeth Nayaireth Suares Carranza 
+- Cindy Johana Palacios Zamora  cjpalacios7@misena.edu.co
