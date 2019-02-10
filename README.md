@@ -40,7 +40,7 @@ Beneficia a gran parte de la población pues hoy día los equipos de cómputo no
 - ¿Qué tipo de pago usará frecuentemente?
 - ¿le gustaría algún programa o plataforma en específico para el soporte a distancia o le es indiferente...?
 - ¿le gustaría orientación de soporte cuando se solucione su problema?
-- ¿crees que la página web de soporte técnico y venta debería tener aplicación móvil.?
+- ¿cree que la página web de soporte técnico y venta debería tener aplicación móvil.?
 - ¿le gustaría soporte de un técnico a domicilio?
 - ¿le gustaría que exista membresía de soportes?
 - ¿Le gustaría que la pagina mostrará seguimiento de los soportes?
