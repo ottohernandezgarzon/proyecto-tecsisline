@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD
 # Tecsisline
+=======
+## Tecsisline
+>>>>>>> 6887f7988e17aa69fa7f31b06f032be44d2bd245
 
 # Idea De Proyecto
 
@@ -23,6 +27,7 @@ Beneficia a gran parte de la población pues hoy día los equipos de cómputo no
 # Objetivos Específicos
 - Construir, entregar y respaldar soluciones oportunas optimizando el funcionamiento de sus equipos empresa o pc de su casa.
 - Brindar un servicio responsable, asequible, continuo y de alta calidad, cumpliendo con los acuerdos de niveles de servicios establecidos, garantizando la satisfacción de nuestros clientes.
+<<<<<<< HEAD
 - Innovar en el mercado con productos y servicios con las últimas tecnologías y los mejores estándares de calidad.
 
 # Cuestionario
@@ -49,3 +54,6 @@ Beneficia a gran parte de la población pues hoy día los equipos de cómputo no
 - ¿Le gustaría que el soporte se ofreciera las 24 horas?
 - ¿Le gustaría que exista servicio técnico para servidores?
 - ¿Tiene alguna duda sobre la opción de soporte en la página web? ¿cual?
+=======
+- Innovar en el mercado con productos y servicios con las últimas tecnologías y los mejores estándares de calidad.
+>>>>>>> 6887f7988e17aa69fa7f31b06f032be44d2bd245
