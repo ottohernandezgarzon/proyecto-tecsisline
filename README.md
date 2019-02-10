@@ -1,9 +1,4 @@
-
-<<<<<<< HEAD
-# Tecsisline
-=======
 ## Tecsisline
->>>>>>> 6887f7988e17aa69fa7f31b06f032be44d2bd245
 
 # Idea De Proyecto
 
@@ -27,33 +22,4 @@ Beneficia a gran parte de la población pues hoy día los equipos de cómputo no
 # Objetivos Específicos
 - Construir, entregar y respaldar soluciones oportunas optimizando el funcionamiento de sus equipos empresa o pc de su casa.
 - Brindar un servicio responsable, asequible, continuo y de alta calidad, cumpliendo con los acuerdos de niveles de servicios establecidos, garantizando la satisfacción de nuestros clientes.
-<<<<<<< HEAD
 - Innovar en el mercado con productos y servicios con las últimas tecnologías y los mejores estándares de calidad.
-
-# Cuestionario
-
-## Resultados
-
-- ¿Cree que la pagina debería vender accesorios? ¿Sí? ¿No? ¿Y por qué?
-- ¿le gustaría que brindáramos una personalización de accesorios?
-- ¿le gustaría que se ofreciera alguna marca en específico? ¿cual?
-- ¿Qué accesorios le gustaría que se vendieran?
-- ¿cree que debería haber un sistema de seguimiento de envíos?
-- ¿Cuánto cree que debería ser el tiempo mínimo de garantía?
-- ¿le gustaría que se ofrecieran partes internas de un equipo de cómputo?
-- ¿Es importante una Cláusula de confidencialidad Cliente - Proveedor?
-- enta en la página web? ¿cual?
-- ¿Qué tipo de pago usará frecuentemente?
-- ¿le gustaría algún programa o plataforma en específico para el soporte a distancia o le es indiferente...?
-- ¿le gustaría orientación de soporte cuando se solucione su problema?
-- ¿cree que la página web de soporte técnico y venta debería tener aplicación móvil.?
-- ¿le gustaría soporte de un técnico a domicilio?
-- ¿le gustaría que exista membresía de soportes?
-- ¿Le gustaría que la pagina mostrará seguimiento de los soportes?
-- ¿Le gustaría que la pagina brindara un servicio gratis de prueba desde la misma?
-- ¿Le gustaría que el soporte se ofreciera las 24 horas?
-- ¿Le gustaría que exista servicio técnico para servidores?
-- ¿Tiene alguna duda sobre la opción de soporte en la página web? ¿cual?
-=======
-- Innovar en el mercado con productos y servicios con las últimas tecnologías y los mejores estándares de calidad.
->>>>>>> 6887f7988e17aa69fa7f31b06f032be44d2bd245
