@@ -52,4 +52,3 @@ Beneficia a gran parte de la población pues hoy día los equipos de cómputo no
 - Otoniel Hernández Garzón      hernandezottto@misena.edu.co
 - Anderson Stiven Yaguma Diaz   ayaguma@misena.edu.co
 - Jhostin David Cespedes Campo  jdcespedes8@misena.edu.co
-- Lizeth Nayaireth Suares Carranza lnsuarez20@misena.edu.co
