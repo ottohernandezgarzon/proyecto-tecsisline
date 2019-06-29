@@ -1,0 +1,12 @@
+{
+    "database.connections": [
+        {
+            "type": "mysql",
+            "name": "otto@localhost (MySql)",
+            "host": "localhost:3306",
+            "username": "otto",
+            "database": null,
+            "password": "21-metallica-10"
+        }
+    ]
+}
