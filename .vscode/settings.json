@@ -7,6 +7,71 @@
             "username": "otto",
             "database": null,
             "password": "21-metallica-10"
+        },
+        {
+            "type": "mysql",
+            "name": "root@localhost (MySql)",
+            "host": "localhost:3306",
+            "username": "root",
+            "database": "tecsisline",
+            "password": "metallica21"
+        }
+    ], // Commentarios personalisados
+    "better-comments.highlightPlainText": true,
+    "better-comments.tags": [
+        {
+            "tag": "@bug",
+            "color": "#e60000",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "?question",
+            "color": "#1cb5ff",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "-",
+            "color": "#474747",
+            "strikethrough": true,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "✓Check",
+            "color": "#98C379",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag": "@status",
+            "color": "#ffffff",
+            "strikethrough": false,
+            "backgroundColor": "transparent"
+        },
+        {
+            "tag":"@test",
+            "color":"#0080ff",
+            "strikethrough":false,
+            "backgroundColor":"transparent"
+        },
+        {
+            "tag": "@url",
+            "color":"#8d1cff",
+            "strikethrough":false,
+            "backgroundColor":"transparent"
+        },
+        {
+			"tag": "@db",
+			"color": "#2828ff",
+			"strikethrough": false,
+			"backgroundColor": "transparent"
         }
     ]
 }
