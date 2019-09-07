@@ -1,0 +1,17 @@
+{
+    "name": "tecsisline",
+    "version": "0.0.1",
+    "description": "Proyecto de sena  con tema de tienda virtual ",
+    "main": "index.js",
+    "scripts": {
+        "test": "node index.js"
+    },
+    "author": "Otoniel Hernández Garzón ",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.17.1",
+        "materialize-css": "^1.0.0-rc.2",
+        "path": "^0.12.7",
+        "pug": "^2.0.4"
+    }
+}
