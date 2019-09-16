@@ -6,11 +6,10 @@
     "scripts": {
         "test": "node index.js"
     },
-    "author": "Otoniel Hernández Garzón ",
+    "authors": "Otoniel Hernández Garzón, Anderson Stiven Yaguma Diaz, Jhostin David Cespedes Campo",
     "license": "MIT",
     "dependencies": {
         "express": "^4.17.1",
-        "materialize-css": "^1.0.0-rc.2",
         "path": "^0.12.7",
         "pug": "^2.0.4"
     }
