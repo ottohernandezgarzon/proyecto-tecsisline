@@ -1,0 +1,34 @@
+extends layouts
+block header
+  header#header.row
+    .encabezado.col.s7.row
+      h3.col.linea Tecsisline 
+      .menuBtn.col
+        a#IniciarSesion.btn.waves-effect.waves-green.white.black-text(type="submit" name="IniciarSesion" href="/login") Iniciar Sesion 
+        a#Registrarse.btn.waves-effect.waves-green.white.black-text(type="submit" name="IniciarSesion") Registrarse
+    .col.s2.right
+      .perfil.right
+        img.fotoPerfil(src="/img/icons/perfil.png", alt="Foto de perfil")
+        .perfilIconsRedesSociales
+          img.icon.facebook.tiny(src="/img/icons/facebook-logo.png", alt="facebook-logo")
+          img.icon.twitter(src="/img/icons/twitter-logo.png", alt="twitter-logo")
+          img.icon.whatsapp(src="/img/icons/whatsapp-logo.png", alt="whatsapp-logo")  
+    .col.s7
+      nav.menu.grey.lighten-2
+        ul 
+          li 
+            a(href="/inicio") Inicio
+          li 
+            a(href="") Producto
+          li 
+            a(href="") Soporte
+          li 
+            a(href="") Contactos
+          li 
+            i#r.material-icons shopping_cart
+            a(href="") Compras
+    .col.s3
+      .search.input-field.center-align
+        i.material-icons search
+        input#search.col.s6(type="search", name="buscar" placeholder="Buscar")
+  block inicio
