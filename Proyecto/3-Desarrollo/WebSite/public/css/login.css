@@ -1,0 +1,16 @@
+#login{
+  margin: 8rem 25%;
+  display: flex;
+}
+
+#login input{
+  border-radius: 3px;
+}
+#redesSocialesLogin{
+  display: inline-flex;
+  flex-direction: column;
+}
+#redesSocialesLogin img{
+  width: 15%;
+  margin: 1ch;
+}
