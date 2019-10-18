@@ -1,18 +1,13 @@
 'use strict'
 const express = require('express'),
-  path=require('path').join,
-  app = express(),
-  publicDir=path(__dirname,'/public'),
+app = express(),
+path=require('path').join,
+publicDir=path(__dirname+'/public'),
+router=require('./paths/router'),
+  
   port = 3000;
-  app.set('view engine', 'pug')
-     .get('/', (req, res) => {
-      res.render('index.pug')
-    })  
-    .get('/inicio',(req,res)=>{
-      res.render('paginas view/inicio.pug')
-    })
-    .get('/login',(req,res) =>{
-      res.render('login/login')
-    })
-  .use(express.static(publicDir))
+  app
+    .set('view engine', 'pug') 
+    .use(express.static(publicDir))
+    .use(router)
    .listen(port, () => console.log('http://localhost:'+port))
