@@ -6,7 +6,7 @@ routerPaths.
   res.render('index')
   })
   .get('/inicio',(req,res)=>{
-  res.render('views/paginas view/inicio')
+  res.render('paginas view/inicio')
   })
   .get('/login',(req,res) =>{
   res.render('login/login')
