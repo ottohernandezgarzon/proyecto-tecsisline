@@ -82,7 +82,7 @@ ul{
 .fotoPerfil{
   border: 2px solid #000;
   border-radius: 100%;
-  height: 18ex;
+  height: 14ex;
   float: right;
 }
 .material-icons{
@@ -90,8 +90,8 @@ ul{
 }
 .icon
 {
-  height: 2vw;
-  margin: 3px;
+  height: 2.2vw;
+  margin: 10px .5vw;
 }
 @media screen and (max-width:870px){
   .menu{
