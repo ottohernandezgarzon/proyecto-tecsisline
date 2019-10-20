@@ -1,0 +1,17 @@
+#authentication{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: baseline;
+}
+#authentication .row{
+  align-self: baseline;
+  width: 100%;
+  margin: 18vw 14vw;
+}
+#authentication input{
+  border-radius: 3px;
+  padding: 2px;
+}
+#authentication label{
+  padding: 0 6px;
+}
