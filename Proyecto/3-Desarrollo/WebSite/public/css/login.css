@@ -1,10 +1,15 @@
 #login{
   margin: 8rem 25%;
   display: flex;
+  flex-flow: column wrap;
+  align-items: baseline;
 }
 
 #login input{
   border-radius: 3px;
+}
+#login label{
+  padding: 0 6px;
 }
 #redesSocialesLogin{
   display: inline-flex;
@@ -13,4 +18,8 @@
 #redesSocialesLogin img{
   width: 15%;
   margin: 1ch;
+}
+#login .row{
+  align-self: baseline;
+  margin: 2vw 8vw;
 }
