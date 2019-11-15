@@ -9,14 +9,21 @@ block header
     .col.s2.right
       .perfil.right
         img.fotoPerfil(src="/img/icons/perfil.png", alt="Foto de perfil")
+        //- ul.subMenu
+        //-   li 
+        //-     a(href="") Mi perfil
+        //-   li 
+        //-     a(href="") Configuración
+        //-   li 
+        //-     a(href="") Cerrar 
         .perfilIconsRedesSociales
           img.icon.facebook.tiny(src="/img/icons/facebook-logo.png", alt="facebook-logo")
           img.icon.twitter(src="/img/icons/twitter-logo.png", alt="twitter-logo")
           img.icon.whatsapp(src="/img/icons/whatsapp-logo.png", alt="whatsapp-logo")  
     .col.s7
-      nav.menu.grey.lighten-2
-        ul 
-          li 
+      nav#menu.nav-extended.grey.lighten-2
+        ul#subMenu
+          li.inicio
             a(href="/inicio") Inicio
           li 
             a(href="/productos") Productos
@@ -25,11 +32,12 @@ block header
                 a(href="/inventario") Inventario
           li 
             a(href="") Soporte
-          li 
+          li
             a(href="") Contactos
           li 
             i#r.material-icons shopping_cart
             a(href="") Compras
+          
     .col.s3
       .search.input-field.center-align
         i.material-icons search

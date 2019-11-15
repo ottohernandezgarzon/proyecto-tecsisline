@@ -1,0 +1,15 @@
+extends layouts
+block title
+  title Autentificar
+block contenido
+  main#authentication.container
+      .row
+        .col.s6
+          .card.grey.lighten-1.center
+            .card-content
+              form(action="#", method="post")
+                h6 Recuperar cuenta
+                .input-field
+                  label.black-text(for="correoLogin") Código
+                  input#correoLogin.white.validate(type="email")
+                  button.btn.waves-effect.waves-green.white.black-text(type="submit") Enviar código de recuperación

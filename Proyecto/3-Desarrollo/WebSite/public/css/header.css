@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
 }
-.menuBtn{
+#menuBtn{
   display: flex;
   margin: 1px 0%;
 }
@@ -22,7 +22,7 @@
 .btn{
   margin: 1ch;
 }
-.menu{
+#menu{
   width: 50vw;
   height: 2.5rem;
   border-radius: 5px;
@@ -34,7 +34,7 @@
 ul{
   padding: 0;
 }
-.menu ul{
+#menu ul{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -42,24 +42,35 @@ ul{
   height: 2.5rem;
   padding: 0;
 }
-.menu li{
+#menu li{
   display: flex;
   align-items: center;
   border-right : 1px solid #000;
   height: 2.5rem;
+  width: 100%;
   align-self: center;
   text-align: center;
 }
-.menu li:last-child{
+#menu li:last-child{
   border: 0;
 }
-.menu a{
+ .onActive{
+  background: royalblue;
+  color: #ccc;
+  border-radius: 5px;
+}
+#menu .onActive>a{
+  color: #fff;
+
+}
+#menu a{
   color: #000;
   font-size: 1.1vw;
   align-self: center;
   text-align: center;
   margin: 0% 1ch;
 }
+
 #search{
   margin: 2px;
   height: 20px;
@@ -94,15 +105,15 @@ ul{
   margin: 10px .5vw;
 }
 @media screen and (max-width:870px){
-  .menu{
+  #menu{
     width: 55vw;
     margin: 2rem 1rem;
   }
-  .menu li{
+  #menu li{
     padding: 0 5px; 
     margin: 0;
   }
-  .menu a{
+  #menu a{
     font-size: x-small;
     padding: 2px;
   }
@@ -120,7 +131,7 @@ ul{
     font-size: x-small;
     line-height: 25px;
   }
-  .menu .material-icons{
+  #menu .material-icons{
    font-size: larger;
     width: 10px;
   }

@@ -3,7 +3,7 @@ const express = require('express'),
 app = express(),
 path=require('path').join,
 publicDir=path(__dirname+'/public'),
-router=require('./paths/router'),
+router=require('./Routes/router'),
   
   port = 3000;
   app

@@ -8,8 +8,9 @@ block contenido
           .card.grey.lighten-1.center
             .card-content
               form(action="#", method="post")
-                h6 Autentificasen
+                h6 Autentificarse
                 .input-field
                   label.black-text(for="correoLogin") Correo
                   input#correoLogin.white.validate(type="email")
-                  button.btn.waves-effect.waves-green.white.black-text(type="submit") Enviar
+              //- button.btn.waves-effect.waves-green.white.black-text(type="submit") Enviar
+              a.btn.waves-effect.waves-green.white.black-text(href="/recuperar") enviar
