@@ -4,7 +4,8 @@
     "description": "Proyecto de sena  con tema de tienda virtual ",
     "main": "index.js",
     "scripts": {
-        "test": "node index.js"
+        "start": "node index.js",
+        "dev": "nodemon index.js "
     },
     "authors": "Otoniel Hernández Garzón, Anderson Stiven Yaguma Diaz, Jhostin David Cespedes Campo",
     "license": "MIT",
