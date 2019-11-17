@@ -8361,7 +8361,7 @@ input[type=range]::-ms-thumb {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 600px;
   -webkit-perspective: 500px;
           perspective: 500px;
   -webkit-transform-style: preserve-3d;
@@ -8408,8 +8408,8 @@ input[type=range]::-ms-thumb {
 
 .carousel .carousel-item {
   visibility: hidden;
-  width: 200px;
-  height: 200px;
+  width: 600px;
+  height: 600px;
   position: absolute;
   top: 0;
   left: 0;
