@@ -7,14 +7,15 @@ block contenido
       .col.s6
         .card.grey.lighten-1.center
           .card-content
-            form(action="#", method="post")
+            form(action="", method="post")
               .input-field
                 label.black-text(for="correoLogin") Correo
                 input#correoLogin.white.validate(type="email")
               .input-field
                 label.black-text(for="contrasenaLogin") Contraseña
                 input#contarsenaLogin.white.validate(type="password")
-                button.btn.waves-effect.waves-green.white.black-text(type="submit") Iniciar sesión
+                //- button.btn.waves-effect.waves-green.white.black-text(type="submit") Iniciar sesión
+                a.btn.waves-effect.waves-green.white.black-text(href="/inicio") Iniciar sesión
               p registrar red social
               #redesSocialesLogin
                 a(href="https://es-la.facebook.com/login/")

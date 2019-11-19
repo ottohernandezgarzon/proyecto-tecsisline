@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "node index.js",
-        "dev": "nodemon index.js "
+        "dev": "nodemon -i public\\js\\ -e js,json index.js "
     },
     "authors": "Otoniel Hernández Garzón, Anderson Stiven Yaguma Diaz, Jhostin David Cespedes Campo",
     "license": "MIT",

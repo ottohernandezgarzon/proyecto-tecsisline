@@ -8,14 +8,17 @@ block header
         a#Registrarse.btn.waves-effect.waves-green.white.black-text(type="submit" name="IniciarSesion") Registrarse
     .col.s2.right
       .perfil.right
-        img.fotoPerfil(src="/img/icons/perfil.png", alt="Foto de perfil")
-        //- ul.subMenu
-        //-   li 
-        //-     a(href="") Mi perfil
-        //-   li 
-        //-     a(href="") Configuración
-        //-   li 
-        //-     a(href="") Cerrar 
+        ul.subMenu
+          img.fotoPerfil(src="/img/icons/perfil.png", alt="Foto de perfil")
+          each listPerfil in ["Mi perfil","configuración","Cerrar",]
+            li 
+              a(href="")=listPerfil
+          //- li 
+          //-   a(href="") Mi perfil
+          //- li 
+          //-   a(href="") Configuración
+          //- li 
+          //-   a(href="") Cerrar 
         .perfilIconsRedesSociales
           img.icon.facebook.tiny(src="/img/icons/facebook-logo.png", alt="facebook-logo")
           img.icon.twitter(src="/img/icons/twitter-logo.png", alt="twitter-logo")
@@ -27,9 +30,10 @@ block header
             a(href="/inicio") Inicio
           li 
             a(href="/productos") Productos
-            ul.suBmenu
-              li
-                a(href="/inventario") Inventario
+            ul.subMenu
+              each list in ["Inventario"]
+                li
+                  a(href='/Inventario')=list
           li 
             a(href="") Soporte
           li

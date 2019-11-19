@@ -1,25 +1,33 @@
-  const express = require('express'),
-    routerPaths= express.Router()
+const express = require('express'),
+routerPaths= express.Router()
 
 routerPaths
   .get('/',(req,res)=>{
-    res.render('index')
+  res.render('index')
   })
   .get('/inicio',(req,res)=>{
-    res.render('paginas view/inicio')
-  })
-  .get('/productos',(req,res)=>{
-    res.render('paginas view/productos')
+  res.render('paginas view/inicio')
   })
   .get('/login',(req,res) =>{
-    res.render('login/login')
+  res.render('login/login')
   })
   .get('/autentificarse',(req,res) =>{
   res.render('login/autentificarse')
   })
-  .get('/recuperar',(req,res) =>{
+  .get('/recuperar',(req,res)=>{
     res.render('login/recuperar')
   })
+  .get('/carousel',(req,res) =>{
+    res.render('paginas view/carousel')
+  })
+  .get('/productos',(req,res) =>{
+    res.render('paginas view/producto/productos')
+  })
+    .get('/Inventario',(req,res) =>{
+    res.render('paginas view/producto/inventarios')
+  })
+
+  
     
 
 module.exports=routerPaths;
