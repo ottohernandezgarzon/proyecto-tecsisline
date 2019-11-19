@@ -1,16 +1,18 @@
-// selectores dinámicos
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('select');
-  var instances = M.FormSelect.init(elems,{});
-});
-// el slider de la pagina principal
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.slider');
-  var instances = M.Slider.init(elems, {});
-});
-// el slider de la pagina principal
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.carousel');
-  var instances = M.Carousel.init(elems, {});
-});
-// selecciona los botones con un color 
+
+  $(document).ready(function(){
+  //  selectores dinámicos
+  $('select').formSelect();
+  //  Carousel
+    $('.carousel').carousel({
+      duration:1000,
+      dist:-150,
+    });
+    autoplay();
+    // mueve el carousel cada tres segundos
+    function autoplay(){
+      $('.carousel').carousel('next');
+      setTimeout(autoplay,5000);      
+    }
+    // Slider
+    $('.slider').slider();
+  });
