@@ -1,4 +1,8 @@
-#contenInventario{
-  padding: 8rem 15rem;
+#contentInventario{
+  padding: 4rem 0;
   
+}
+#contentInventario thead{
+  text-align: center;
+  border-bottom: 3px solid #000;
 }

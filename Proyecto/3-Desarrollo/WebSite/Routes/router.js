@@ -9,24 +9,30 @@ routerPaths
   res.render('paginas view/inicio')
   })
   .get('/login',(req,res) =>{
-  res.render('login/login')
+  res.render('paginas view/login/login')
+  })
+  .get('/registrarse',(req,res)=>{
+    res.render('paginas view/login/registrar')
   })
   .get('/autentificarse',(req,res) =>{
-  res.render('login/autentificarse')
+  res.render('paginas view/login/autentificarse')
   })
   .get('/recuperar',(req,res)=>{
-    res.render('login/recuperar')
+    res.render('paginas view/login/recuperar')
   })
   .get('/carousel',(req,res) =>{
     res.render('paginas view/carousel')
   })
-  .get('/productos',(req,res) =>{
+  .get('/Productos',(req,res) =>{
     res.render('paginas view/producto/productos')
   })
-    .get('/Inventario',(req,res) =>{
+  .get('/Inventario',(req,res) =>{
     res.render('paginas view/producto/inventarios')
   })
-
+  .get('/Perfil',(req,res)=>{
+    res.render('paginas view/perfil/perfiles')
+  })
+    
   
     
 

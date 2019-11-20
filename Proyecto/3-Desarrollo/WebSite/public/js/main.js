@@ -15,4 +15,9 @@
     }
     // Slider
     $('.slider').slider();
+    // Inputs
+    M.updateTextFields();
+    $('input#input_text, textarea#textarea2').characterCounter();
+    // Dropdown
+    $(".dropdown-trigger").dropdown();
   });

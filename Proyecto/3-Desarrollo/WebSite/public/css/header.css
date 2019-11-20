@@ -1,8 +1,9 @@
 
 #header{
-  border: 1px solid #ccc;
+  border: 1px solid #777;
   border-radius: 4px;
   margin: 5px;
+  background: white;
 }
 .row{
   margin: 0%;
@@ -89,6 +90,7 @@ ul{
   align-items: center;
   flex-direction: column;
   margin: 1rem 1rem 0 0;
+  position: relative;
 }
 .fotoPerfil{
   border: 2px solid #000;
