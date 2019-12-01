@@ -39,9 +39,18 @@ block contenido
             h4.center-align.green-text Se agrega un nuevo producto
           .modal-footer  
             a.modal-close.waves-effect.waves-green.btn.red.accent-4  cerrar
-              
         a(href="#AgregarProducto").waves-effect.waves-light.btn.green.accent-4.modal-trigger Agregar producto
           i.material-icons.right add_shopping_cart
-        a.waves-effect.waves-green.btn.right.red.accent-4 Eliminar  producto
+
+        #EliminarProducto.modal
+          .modal-content
+            h4.center-align Escribe el motivo
+            textarea 
+            
+          .modal-footer  
+            a.modal-close.waves-effect.waves-green.btn.red.accent-4  Cancelar
+            
+            a(href="/inventario").waves-effect.waves-green.btn.red.accent-4.left.green.accent-4  Enviar
+        a(href="#EliminarProducto").waves-effect.waves-green.btn.right.red.accent-4.modal-trigger Eliminar  producto
           i.material-icons.right delete_forever
       
