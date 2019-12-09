@@ -20,9 +20,6 @@
     $('input#input_text, textarea#textarea2').characterCounter();
     // Dropdown
     $(".dropdown-trigger").dropdown();
-    // ventana modal 
-    $('.modal').modal({
-      endingTop: 35
-    });
+    $('.modal').modal({endingTop: 35});
+
   });
-  
