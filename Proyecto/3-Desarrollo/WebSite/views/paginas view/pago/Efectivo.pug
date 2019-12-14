@@ -1,0 +1,35 @@
+extends ../header
+block titleMenu
+  title Efectivo
+block contenido 
+                .modal-content
+                   form.container(action="#", method="post")
+                    .input-field.col.s5
+                      input.validate#Vivienda(type="text", name="")
+                      label(for="Vivienda") Nombre completo
+                    .input-field.col.s5 
+                      input.validate#DireccionDe(type="text", name="")
+                      label(for="DireccionDe") Numero de documento
+                    .input-field.col.s12
+                      input.validate#DireccionDe(type="text", name="")
+                      label(for="DireccionDe") Correo Electronico
+                      .modal-footer 
+                .col.s2.left
+                    .perfil.left
+                        img.fotoPerfil(src="/img/icons/efecty.png", alt="metod1") 
+                        a(href="#Enviar").waves-effect.waves-green.btn.green.accent-4.modal-trigger Seleccionar metodo
+                .col.s2.right
+                    .perfil.right
+                        img.fotoPerfil(src="/img/icons/baloto.png", alt="metod2") 
+                        a(href="#Enviar").waves-effect.waves-green.btn.green.accent-4.modal-trigger Seleccionar metodo
+                        #Enviar.modal
+                          .modal-content
+                            h4.center-align.green-text Se ha guardado con exito.                       
+                        
+                        
+                        
+                        //- a(href="#Enviar").waves-effect.waves-green.btn.green.accent-4.modal-trigger Guardar
+                        //- #Enviar.modal
+                        //-   .modal-content
+                        //-     h4.center-align.green-text Se agrego su tarjeta con exito. 
+                        //- a(href="#inicio").modal-close.waves-effect.waves-green.btn.red.accent-4  Cerrar

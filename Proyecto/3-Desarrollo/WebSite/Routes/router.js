@@ -32,8 +32,16 @@ routerPaths
   .get('/Perfil',(req,res)=>{
     res.render('paginas view/perfil/perfiles')
   })
+  .get('/pago',(req,res)=>{
+    res.render('paginas view/pago/Pago')
+  })
+  .get('/Credito',(req,res)=>{
+    res.render('paginas view/pago/Credito')
+  })
+  .get('/Efectivo',(req,res)=>{
+    res.render('paginas view/pago/Efectivo')
+  })
     
-  
     
 
 module.exports=routerPaths;
