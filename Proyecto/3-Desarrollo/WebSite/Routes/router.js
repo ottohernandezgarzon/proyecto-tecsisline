@@ -32,6 +32,8 @@ routerPaths
   .get('/Perfil',(req,res)=>{
     res.render('paginas view/perfil/perfiles')
   })
+  .get('/Contactos',(req,res)=>{res.render('paginas view/producto/contactos/contactos')   
+  })
     
   
     
