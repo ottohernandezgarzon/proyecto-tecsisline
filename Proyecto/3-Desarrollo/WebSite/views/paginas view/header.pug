@@ -9,7 +9,7 @@ block header
     .col.s2.right
       .perfil.right
         img.fotoPerfil(src="/img/icons/perfil.png", alt="Foto de perfil")
-        //- ul#subMenuPerfil
+        //-ul#subMenuPerfil
           each listPerfil in ["Perfil","configuración","Cerrar",]
             li 
               a(href=listPerfil)=listPerfil
@@ -33,8 +33,8 @@ block header
           li
             a(href="/contactos") Contactos
           li 
-            i#r.material-icons shopping_cart
-            a(href="") Compras
+            //i#r.material-icons shopping_cart
+            a(href="/pago") Compras
           
     .col.s3
       .search.input-field.center-align

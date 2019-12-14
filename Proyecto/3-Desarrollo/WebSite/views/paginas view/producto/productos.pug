@@ -16,6 +16,36 @@ block contenido
               span.card-title.grey-text.text-darken-4 Bafle
               i.material-icons.right cerrar
               p Descripcion del producto.
-            .card.action
-              a.btn-floating.waves-effect.waves-grey.grey
+            .button.card.action
+              #Carrito.modal
+                .modal-content
+                   form.container(action="#", method="post")
+                    .input-field.col.s5
+                      input.validate#Vivienda(type="text", name="")
+                      label(for="Vivienda") Tipo de vivienda
+                    .input-field.col.s6
+                      input.validate#DireccionDe(type="text", name="")
+                      label(for="DireccionDe") Direccion de vivienda
+                    .input-field.col.s5
+                      input.validate#Pais(type="text", name="")
+                      label(for="Pais") Pais
+                    .input-field.col.s6
+                      input.validate#Ciudad(type="text", name="")
+                      label(for="Ciudad") Ciudad
+                    .input-field.col.s5
+                      input.validate#codigo(type="text" name="")
+                      label(for="codigo") Codigo Postal
+                    .input-field.col.s6
+                      input.validate#telefono(type="text" name="")
+                      label(for="telefono") Telefono
+                    .input-field.col.s11
+                      input.validate#Recibe(type="Text" name="")
+                      label(for="Recibe") Nombre de quien recibe
+                      .modal-footer  
+                        a(href="#Enviar").waves-effect.waves-green.btn.green.accent-4.modal-trigger Enviar
+                        #Enviar.modal
+                          .modal-content
+                            h4.center-align.green-text Gracias por tu compra :)
+                        a.modal-close.waves-effect.waves-green.btn.red.accent-4  Cerrar
+              a(href="#Carrito").waves-effect.waves-light.btn.green.accent-4.modal-trigger Comprar Producto
                 i.material-icons shopping_cart
