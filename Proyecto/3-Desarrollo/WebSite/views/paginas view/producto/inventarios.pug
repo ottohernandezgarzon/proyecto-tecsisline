@@ -2,55 +2,46 @@ extends ../header
 block titleMenu 
   title productos-inventarios
 block contenido
-   main#contentInventario.container
-    .card.z-depth-3
-      .inventario.card-content
-        table#i.responsive-table.striped.centered
-          thead.center-align
-            tr
-              th Tipo producto
-              th Marca  
-              th Modelo
-              th Serie    
-          tbody
-            tr
-              td Bios
-              td ASUS
-              td THUT    
-              td 987342556  
-            tr
-              td Teclado
-              td Genius
-              td XTDGamer
-              td 489654786 
-            tr
-              td Monitor
-              td SAMSUM
-              td FULLCURVO
-              td 06543521
-            tr
-              td Portatil
-              td DELL
-              td Alienword
-              td 198735563565
-      .button.card-action
-        #AgregarProducto.modal
-          .modal-content
-            h4.center-align.green-text Se agrega un nuevo producto
-          .modal-footer  
-            a.modal-close.waves-effect.waves-green.btn.red.accent-4  cerrar
-        a(href="#AgregarProducto").waves-effect.waves-light.btn.green.accent-4.modal-trigger Agregar producto
-          i.material-icons.right add_shopping_cart
-
-        #EliminarProducto.modal
-          .modal-content
-            h4.center-align Escribe el motivo
-            textarea 
-            
-          .modal-footer  
-            a.modal-close.waves-effect.waves-green.btn.red.accent-4  Cancelar
-            
-            a(href="/inventario").waves-effect.waves-green.btn.red.accent-4.left.green.accent-4  Enviar
-        a(href="#EliminarProducto").waves-effect.waves-green.btn.right.red.accent-4.modal-trigger Eliminar  producto
-          i.material-icons.right delete_forever
-      
+  main#contentInventario.container
+    .row   
+      .col.l12.m8.push-l2
+        .card.container  
+          .card-content
+            table.centered.striped
+              thead.indigo.lighten-2               
+                tr                  
+                  th Id
+                  th Titulo
+                  th Noticias 
+                  th Acción
+              tbody
+                -for(let i=0; i< newsRows.length; i++)
+                  tr
+                    each row in [newsRows[i].idNews,newsRows[i].title,newsRows[i].news]
+                      td= row
+                    td
+                      a.btn-floating.btn-small.indigo(href="/update/"+ newsRows[i].idNews, title="editar") 
+                        i.material-icons edit
+                      a.btn-floating.btn-small.red.darken-3(href="/delete/"+newsRows[i].idNews, title="Eliminar") 
+                        i.material-icons delete
+        .card-action   
+            button.btn.modal-trigger.green.darken-2(data-target="windowsModal" ) Agregar
+              i.material-icons.right add
+    //- El formulario  crea la en ingreso de los datos de los usuarios 
+    
+    .modal#windowsModal.row.container
+      .col.l8.m4.push-l2
+        .modal-content.card 
+          .card-content.container
+            form#insert.row(action="/Inventario/insert" method="post")
+              .input-field.col.s10
+                label(for="title",) title
+                input#title.validate(type="text",name="title" autofocus)
+              .input-field.col.s10
+                textarea#news.materialize-textarea.validate(type="textarea",name="news")
+                label(for="news",) news
+          .card-action.container
+            button.btn.btn-small.left.indigo(type="submit",form="insert") Enviar
+              i.material-icons send
+            button.btn.btn-small.modal-close.right.red.darken-3 Cancelar
+              i.material-icons cancel

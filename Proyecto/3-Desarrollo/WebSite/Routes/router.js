@@ -1,6 +1,7 @@
 const express = require('express'),
-routerPaths= express.Router()
-
+routerPaths= express.Router(),
+dataControl = require('../Controllers/dataControl');
+const control = new dataControl(); 
 routerPaths
   .get('/',(req,res)=>{
   res.render('index')
@@ -26,14 +27,14 @@ routerPaths
   .get('/Productos',(req,res) =>{
     res.render('paginas view/producto/productos')
   })
-  .get('/Inventario',(req,res) =>{
-    res.render('paginas view/producto/inventarios')
+  .get('/soporte',(req,res)=>{
+    res.render('paginas view/soporte/soporte')
   })
   .get('/Perfil',(req,res)=>{
     res.render('paginas view/perfil/perfiles')
   })
   .get('/Contactos',(req,res)=>{
-    res.render('paginas view/producto/contactos/contactos') 
+    res.render('paginas view/contactos/contactos') 
   })  
   .get('/pago',(req,res)=>{
     res.render('paginas view/pago/Pago')
@@ -44,7 +45,13 @@ routerPaths
   .get('/Efectivo',(req,res)=>{
     res.render('paginas view/pago/Efectivo')
   })
-    
-    
+  .post('/registrarse',(req,res)=>{
+    res.redirect('/inicio')
+  })  
+  .get('/Inventario', control.read())
+  .get('/update/:idNews',control.updateR()) 
+  .post('/update/:idNews',control.update()) 
+  .get('/delete/:idNews', control.delete()) 
+  .post('/Inventario/insert',control.create())
 
 module.exports=routerPaths;
