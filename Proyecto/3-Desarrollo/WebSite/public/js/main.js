@@ -1,5 +1,5 @@
-$(document).ready(function(){
-  M.AutoInit();
+
+  $(document).ready(function(){
   //  selectores dinámicos
   $('select').formSelect();
   //  Carousel
@@ -19,28 +19,7 @@ $(document).ready(function(){
     M.updateTextFields();
     $('input#input_text, textarea#textarea2').characterCounter();
     // Dropdown
-    $(".dropdown-trigger").dropdown(
-      {
-        hover: true,
-        autoTrigger :false
-      });
+    $(".dropdown-trigger").dropdown();
     $('.modal').modal({endingTop: 35});
+
   });
-      function tarjeta(){
-        M.toast({
-            html:'Se agrego su tarjeta con éxito.',
-            classes:'green'
-          });
-      }
-      function efecty(){
-        M.toast({
-            html:'Selecciono efecty',
-            classes:'green'
-          });
-      }
-      function baloto(){
-        M.toast({
-            html:'Selecciono Via Baloto',
-            classes:'green'
-          });
-      }

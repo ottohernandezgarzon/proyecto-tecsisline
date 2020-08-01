@@ -1,0 +1,66 @@
+extends ../../header
+block titleMenu 
+  title contactos
+block contenido
+ main#contentContactos.container
+    .card.z-depth-3
+      .contactos.card-content
+        table(style="position:relative, top: 1rem")#i.responsive-table.striped.centered
+          thead.center-align
+            tr
+              th Columna_1
+              th Columna_2  
+              th Columna_3
+              th Columna_4
+              th Columna_5
+              th Columna_6   
+          tbody
+            tr
+              td Registro_1
+              td Registro_2
+              td Registro_3
+              td Registro_4
+              td Registro_5 
+              td Registro_6 
+            tr
+              td Registro_1
+              td Registro_2
+              td Registro_3
+              td Registro_4
+              td Registro_5
+              td Registro_6
+            tr
+              td Registro_1
+              td Registro_2
+              td Registro_3
+              td Registro_4
+              td Registro_5
+              td Registro_6
+            tr
+              td Registro_1
+              td Registro_2
+              td Registro_3
+              td Registro_4
+              td Registro_5
+              td Registro_6
+
+      .button.card-action
+        #AgregarProducto.modal
+          .modal-content
+            h4.center-align.green-text Se agrega un nuevo producto
+          .modal-footer  
+            a.modal-close.waves-effect.waves-green.btn.red.accent-4  cerrar
+        a(href="#AgregarProducto").waves-effect.waves-light.btn.green.accent-4.modal-trigger Agregar producto
+          i.material-icons.right add_shopping_cart
+
+        #EliminarProducto.modal
+          .modal-content
+            h4.center-align Escribe el motivo
+            textarea 
+            
+          .modal-footer  
+            a.modal-close.waves-effect.waves-green.btn.red.accent-4  Cancelar
+            
+            a(href="/contactos").waves-effect.waves-green.btn.red.accent-4.left.green.accent-4  Enviar
+        a(href="#EliminarProducto").waves-effect.waves-green.btn.right.red.accent-4.modal-trigger Eliminar  producto
+          i.material-icons.right delete_forever
