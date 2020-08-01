@@ -3,21 +3,11 @@ block titleMenu
   title pago
 block contenido
     main#Pago
-                  .col.s6.center
-                    .perfil.center
-                        h4 añadir tarjeta
-                        img.fotoPerfil(src="/img/icons/add-tarjeta.png", alt="metod1") 
-                        a(href="Credito").waves-effect.waves-green.btn.green.accent-4.modal-trigger Seleccionar metodo
-                  .col.s6.center
-                    .perfil.center
-                        h4 efectivo
-                        img.fotoPerfil(src="/img/icons/efectivo.jpg", alt="metod1") 
-                        a(href="Efectivo").waves-effect.waves-green.btn.green.accent-4.modal-trigger Seleccionar metodo
-    //- .col.s12
-    //-   nav#menu.nav-extended.blue
-    //-     ul#subMenu
-    //-       li.Pago
-    //-         a(href="credito") Agregar tarjeta de credito o debito
+    .col.s12
+      nav#menu.nav-extended.blue
+        ul#subMenu
+          li.Pago
+            a(href="credito") Agregar tarjeta de credito o debito
           li 
             a(href="Efectivo") Pago en efectivo
 

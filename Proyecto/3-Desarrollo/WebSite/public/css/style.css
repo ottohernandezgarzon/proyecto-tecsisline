@@ -5,6 +5,9 @@
 @import url('authentication.css');
 @import url('inventario.css');
 @import url('perfiles.css');
+@import url('contacto.css');
+@import url('soporte.css');
+@import url('pago.css');
 *{
   margin: 0;
   padding: 0;

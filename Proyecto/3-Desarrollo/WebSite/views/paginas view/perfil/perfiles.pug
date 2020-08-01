@@ -11,7 +11,7 @@ block contenido
             input#primerNombre.right.col.s4(type="text", name="")
           .segundoNombre.row
             span.col.s6 Segundo Nombre
-            input#segundoNombre.right.col.s4(type="text", name="")
+            input#segundoNosmbre.right.col.s4(type="text", name="")
           .primerApellido.row
             span.col.s6 Primer Apellido
             input#primerApellido.right.col.s4(type="text", name="")
@@ -42,6 +42,11 @@ block contenido
           .tipoCargo.row
             span.col.s6 Tipo de cargo  
             input#tipoCargo.right.col.s4(type="text", name="" placeholder="Cliente" disabled )
-        .card-action
-          button.btn.waves-effec.waves-green.green.accent-4(type="submit") Guardar cambios
-          
+            
+            .a(href="#modalGuardar").btn.modal-trigger.green Guardar cambios
+            #modalGuardar.modal
+              .modal-content.center
+                h4.center.container datos guardados 
+                p.center.text Se han actualizado los datos correctamente.
+              .modal-footer
+                a.modal-close.waves-effect.waves-green.btn-flat.red.white-text cerrar

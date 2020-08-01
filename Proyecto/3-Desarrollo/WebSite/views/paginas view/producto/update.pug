@@ -1,0 +1,25 @@
+extends ../header
+block titleMenu
+  title Inventario-Actualizar
+block contenido 
+  .row.container
+    .col.l8.m4.push-l2
+      .card 
+        .card-content.container
+          form#insert.row(action="/update/"+update.idNews , method="post")
+            .input-field.col.s10
+              label(for="idNews",) Indicador
+              input#title.validate(type="text",name="idNews",value=update.idNews)
+            .input-field.col.s10
+              label(for="title",) title
+              input#title.validate(type="text",name="title", value=update.title )
+            .input-field.col.s10
+              label(for="news",) news
+              input#news.materialize-textarea.validate(type="text",name="news",value=update.news)
+        .card-action.container
+          button.btn-small.left(type="submit",form="insert") Enviar
+            i.material-icons send
+          a(href="/").btn-small.right Cancelar
+            i.material-icons cancel
+  script(src="http://localhost:3000/js/main.js")
+  script(src="http://localhost:3000/js/materialize.js")
