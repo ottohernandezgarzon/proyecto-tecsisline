@@ -27,17 +27,6 @@ routerPaths
   .get('/Productos',(req,res) =>{
     res.render('paginas view/producto/productos');
   })
-<<<<<<< HEAD
-  .get('/Inventario',(req,res) =>{
-    res.render('paginas view/producto/inventarios');
-  })
-  .get('/Perfil',(req,res)=>{
-    res.render('paginas view/perfil/perfiles');
-  });
-    
-  
-    
-=======
   .get('/soporte',(req,res)=>{
     res.render('paginas view/soporte/soporte')
   })
@@ -64,6 +53,5 @@ routerPaths
   .post('/update/:idNews',control.update()) 
   .get('/delete/:idNews', control.delete()) 
   .post('/Inventario/insert',control.create())
->>>>>>> dbf56e9b8f8f98cf90234bbb01debe992b9a0c55
 
 module.exports=routerPaths;
