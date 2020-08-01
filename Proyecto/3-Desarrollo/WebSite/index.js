@@ -1,4 +1,4 @@
-'use strict'
+' use strict ';
 const express = require('express'),
 app = express(),
 path=require('path').join,
@@ -10,4 +10,4 @@ router=require('./Routes/router'),
     .set('view engine', 'pug') 
     .use(express.static(publicDir))
     .use(router)
-   .listen(port, () => console.log('http://localhost:'+port))
+   .listen(port, () => console.log('http://localhost:'+port));

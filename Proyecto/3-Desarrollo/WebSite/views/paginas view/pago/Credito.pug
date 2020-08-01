@@ -1,0 +1,33 @@
+extends ../header
+block titleMenu
+  title Credito
+block contenido 
+                .modal-content
+                   form.container(action="#", method="post")
+                    .input-field.col.s5
+                      input.validate#Vivienda(type="text", name="")
+                      label(for="Vivienda") Numero de tarjeta
+                    .input-field.col.s6
+                      input.validate#DireccionDe(type="date", name="")
+                      label(for="DireccionDe") Fecha de vencimiento
+                    .input-field.col.s5
+                      input.validate#Pais(type="text", name="")
+                      label(for="Pais") Pais
+                    .input-field.col.s6
+                      input.validate#Ciudad(type="text", name="")
+                      label(for="Ciudad") Nombre y apellido
+                    .input-field.col.s5
+                      input.validate#codigo(type="text" name="")
+                      label(for="codigo") Documento
+                    .input-field.col.s6
+                      input.validate#telefono(type="text" name="")
+                      label(for="telefono") Codigo de seguridad (CVV)
+                    .input-field.col.s11
+                      input.validate#Recibe(type="Text" name="")
+                      label(for="Recibe") Nombre de quien recibe
+                      .modal-footer  
+                        a(href="#Enviar").waves-effect.waves-green.btn.green.accent-4.modal-trigger Guardar
+                        #Enviar.modal
+                          .modal-content
+                            h4.center-align.green-text Se agrego su tarjeta con exito. 
+                        a(href="#inicio").modal-close.waves-effect.waves-green.btn.red.accent-4  Cerrar

@@ -5,12 +5,14 @@
     "main": "index.js",
     "scripts": {
         "start": "node index.js",
-        "dev": "nodemon index.js -i public\\js\\ -e js,json "
+        "test": "nodemon index.js -i public\\js\\ -e js,json "
     },
     "authors": "Otoniel Hernández Garzón, Anderson Stiven Yaguma Diaz, Jhostin David Cespedes Campo",
     "license": "MIT",
     "dependencies": {
+        "body-parse": "^0.1.0",
         "express": "^4.17.1",
+        "mysql": "^2.18.1",
         "path": "^0.12.7",
         "pug": "^2.0.4"
     }

@@ -1,37 +1,37 @@
 const express = require('express'),
-routerPaths= express.Router()
+routerPaths= express.Router();
 
 routerPaths
   .get('/',(req,res)=>{
-  res.render('index')
+  res.render('index');
   })
   .get('/inicio',(req,res)=>{
-  res.render('paginas view/inicio')
+  res.render('paginas view/inicio');
   })
   .get('/login',(req,res) =>{
-  res.render('paginas view/login/login')
+  res.render('paginas view/login/login');
   })
   .get('/registrarse',(req,res)=>{
-    res.render('paginas view/login/registrar')
+    res.render('paginas view/login/registrar');
   })
   .get('/autentificarse',(req,res) =>{
-  res.render('paginas view/login/autentificarse')
+  res.render('paginas view/login/autentificarse');
   })
   .get('/recuperar',(req,res)=>{
-    res.render('paginas view/login/recuperar')
+    res.render('paginas view/login/recuperar');
   })
   .get('/carousel',(req,res) =>{
-    res.render('paginas view/carousel')
+    res.render('paginas view/carousel');
   })
   .get('/Productos',(req,res) =>{
-    res.render('paginas view/producto/productos')
+    res.render('paginas view/producto/productos');
   })
   .get('/Inventario',(req,res) =>{
-    res.render('paginas view/producto/inventarios')
+    res.render('paginas view/producto/inventarios');
   })
   .get('/Perfil',(req,res)=>{
-    res.render('paginas view/perfil/perfiles')
-  })
+    res.render('paginas view/perfil/perfiles');
+  });
     
   
     
