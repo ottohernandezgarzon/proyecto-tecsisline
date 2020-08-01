@@ -1,1 +1,5 @@
-language: generic
+language: node_js
+node_js: 
+  -  "12.x.X"
+script:
+- npm test
