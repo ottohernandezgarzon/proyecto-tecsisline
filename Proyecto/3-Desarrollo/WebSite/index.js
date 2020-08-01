@@ -1,4 +1,5 @@
-'use strict'
+' use strict ';
+// Recursos o paquetes primordiales
 const express = require('express'),
 app = express(),
 path=require('path').join,

@@ -1,11 +1,3 @@
 #contentContactos{
-  padding: 6rem 0;
-  
-}
-#contentContactos thead{
-  text-align: center;
-  border-bottom: 3px solid #000;
-}
-#contentContactos textarea{
-  height: 8rem;
+  padding: 1.5rem 0;
 }
