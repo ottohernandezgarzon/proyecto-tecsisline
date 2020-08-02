@@ -1,3 +1,3 @@
 language: node_js
 node_js: "node"
-script: cd ./Proyecto/3-Desarrollo/Website/ && npm run test 
+script: "cd ./Proyecto/3-Desarrollo/Website/ && npm run test" 
