@@ -1,3 +1,4 @@
 language: node_js
-node_js: 
-- "12.14.1"
+node_js: "lts/*"
+script: 
+- "nodemon index.js -i public\\js\\ -e js,json"
