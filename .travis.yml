@@ -1,2 +1,3 @@
-lint:
-- Proyecto\3-Desarrollo\WebSite\.travis.yml
+language: node_js
+node_js: 
+- "12"
