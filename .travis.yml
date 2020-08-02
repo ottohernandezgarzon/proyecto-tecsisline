@@ -1,5 +1,3 @@
-language: generic
-
-# language: node_js
-# node_js: "node"
-# script: "nodemon .\Proyecto\3-Desarrollo\Website\index.js -i public\\js\\ -e js,json"
+language: node_js
+node_js: lts/*
+script: "nodemon .\Proyecto\3-Desarrollo\Website\index.js -i public\\js\\ -e js,json"
