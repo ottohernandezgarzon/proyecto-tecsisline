@@ -4,4 +4,4 @@ node_js:
   - 12.18.3
 before_script:
   - npm install -g nodemon
-script: npm run test
+script: npm run start
