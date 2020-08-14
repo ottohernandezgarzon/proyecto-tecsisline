@@ -3,4 +3,3 @@ node_js:
   - lts/*
 before_script:
   - npm install -g nodemon
-script: nodemon -v
