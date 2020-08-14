@@ -22,7 +22,7 @@ class dataControl extends dataModels{
         }else
         {
           console.log(`Insert Successful`);
-          response.redirect('/x');
+          response.redirect('/Inventario');
           return this.read()
         }
       }
