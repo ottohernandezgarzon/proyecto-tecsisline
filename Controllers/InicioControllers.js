@@ -1,10 +1,9 @@
 'use strict';
 
-const InicioModel = require("../Models/IncioModel");
 
 // Recursos
 
-class InicioController extends InicioModel{
+class InicioController {
   index(){
     let index =(req,res)=>{
       res.render('paginas view/inicio');
@@ -12,5 +11,5 @@ class InicioController extends InicioModel{
     return index;
   }
 }
-
-module.exports = InicioController;
+const inicio = new InicioController;
+module.exports =inicio;

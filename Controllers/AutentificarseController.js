@@ -1,8 +1,7 @@
 ' use strict '
 // Recursos
-const AutentificarseModal = require('../Models/AutentificarseModal')
 // Clase AutentificarseController con herencia a AutentificarseModal
-class AutentificarseController extends AutentificarseModal{
+class AutentificarseController {
   index(){
     let index =(req,res)=>{
       res.render('paginas view/login/autentificarse');
@@ -10,4 +9,5 @@ class AutentificarseController extends AutentificarseModal{
     return index;
   }
 }
-module.exports = AutentificarseController;
+const autentificarse = new AutentificarseController();
+module.exports = autentificarse;

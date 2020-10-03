@@ -1,8 +1,7 @@
 'use strict'
 // Recursos
-const ProductoModel = require("../Models/ProductoModel");
 // Clase ProductoModel con herencia ProductoModel
-class ProductosController extends ProductoModel{
+class ProductosController {
   index(){
     let index = (req,res)=>{
       res.render('paginas view/producto/productos')
@@ -10,4 +9,5 @@ class ProductosController extends ProductoModel{
     return index;
   }
 }
-module.exports = ProductosController;
+const producto = new ProductosController();
+module.exports = producto;

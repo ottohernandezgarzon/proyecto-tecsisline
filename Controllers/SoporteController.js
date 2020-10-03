@@ -1,8 +1,7 @@
 ' use strict '
 // Recursos
-const SoporteModel = require("../Models/SoporteModel")
 // Clase SoporteController con herencia SoporteModel
-class SoporteController extends SoporteModel{
+class SoporteController {
   index(){
     let index = (req,res)=>{
       res.render('paginas view/soporte/soporte')
@@ -10,4 +9,5 @@ class SoporteController extends SoporteModel{
     return index;
   }
 }
-module.exports = SoporteController;
+const soporte = new SoporteController();
+module.exports = soporte;

@@ -1,8 +1,16 @@
 ' use strict '
-// Recursos
-const dbConnection = require("./database/dbConnection");
-// Clase RegistrarseModel con herencia a dbConnection
-class RegistrarseModel extends dbConnection{
-
-}
-module.exports= RegistrarseModel;
+module.exports = (sequelize, DataTypes) => {
+  const Image = sequelize.define("imagen", {
+    foto: {
+      type: DataTypes.BLOB("long"),
+    },
+    tipo_image:{
+      type:DataTypes.STRING
+    },
+    texts: {
+      type: DataTypes.STRING
+    },
+  });
+  return Image;
+};
+//  configurar la  base de datos

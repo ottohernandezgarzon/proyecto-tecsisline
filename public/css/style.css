@@ -8,10 +8,11 @@
 @import url('contacto.css');
 @import url('soporte.css');
 @import url('pago.css');
+
 *{
   margin: 0;
   padding: 0;
-} 
+}
 body{
   background:#f0f0f0;
 
@@ -20,3 +21,16 @@ body{
   background-image: url('../img/photo/fondoPortada01.jpg');
   background-repeat: initial;
 }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] { -moz-appearance:textfield; }input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] { -moz-appearance:textfield; }

@@ -1,14 +1,14 @@
 ' use strict '
 // Recursos
-const PerfilModel = require("../Models/PerfilModel");
 // Clase PerfilController con herencia a PerfilModel
-class PerfilController extends PerfilModel{
+class PerfilController{
   index (){
     let index =(req,res)=>{
       res.render('paginas view/perfil/perfil.')
     }
-    return index; 
+    return index;
 
   }
 }
-module.exports = PerfilController;
+const perfil = new PerfilController();
+module.exports = perfil;

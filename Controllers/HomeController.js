@@ -1,8 +1,8 @@
 ' use strict';
 // Recursos
-const HomeModel = require('../Models/HomeModel');
+
 // Clase HomeController con herencia a HomeModel
-class HomeController extends HomeModel{
+class HomeController {
 
   index(){
     let index = (req,res)=>{
@@ -11,4 +11,5 @@ class HomeController extends HomeModel{
     return  index;
   }
 }
-module.exports = HomeController;
+const home = new HomeController();
+module.exports = home;

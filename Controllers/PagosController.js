@@ -1,13 +1,13 @@
 ' use strict '
-// Recursos
-const PagoModel = require("../Models/PagoModel");
+
 // Clase PagosController con herencia a PagoModel
-class PagosController extends PagoModel{
+class PagosController {
   index(){
     let index = (req,res)=>{
-      res.render('paginas view/pagos/pago')
+      res.render('paginas view/pago/pago')
     }
     return index;
   }
 }
-module.exports = PagosController;
+const pago = new PagosController();
+module.exports = pago;

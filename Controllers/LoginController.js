@@ -1,8 +1,7 @@
 ' user strict';
 // Recursos
-const LoginModel = require("../Models/LoginModel");
 
-class LoginController extends LoginModel{
+class LoginController {
   index(){
     let index =(req,res)=>{
       res.render('paginas view/login/login')
@@ -10,4 +9,5 @@ class LoginController extends LoginModel{
     return index;
   }
 }
-module.exports = LoginController;
+const login = new LoginController();
+module.exports = login ;

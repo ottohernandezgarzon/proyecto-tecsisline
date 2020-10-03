@@ -1,8 +1,7 @@
 ' use strict '
 // Recursos
-const RecuperarModel = require("../Models/RecuperarModel");
 // Clase RecuperarController con herencia a RecuperarModel
-class RecuperarController extends RecuperarModel{
+class RecuperarController{
   index(){
     let index=(req,res)=>{
       res.render('paginas view/login/recuperar');
@@ -10,4 +9,5 @@ class RecuperarController extends RecuperarModel{
     return index;
   }
 }
-module.exports = RecuperarController;
+const recuperar = new RecuperarController();
+module.exports = recuperar;

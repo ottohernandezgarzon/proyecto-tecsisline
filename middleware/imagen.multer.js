@@ -7,7 +7,7 @@ const
 
 
 const storage= multer.diskStorage({
-  destination: pathJoin(__dirname,'../public/img/upload'),
+  destination: pathJoin(__dirname,'../public/img/photo/upload'),
   filename: (req, file,cb)=>{
     cb(null,file.originalname)
   },
