@@ -3,40 +3,63 @@ block titleMenu
   title Registrarse
 block contenido
   main#registrase.container
-    .row.card.z-depth-3
-      form.container(action="#", method="post")
-        .input-field.col.s5
-          input.validate#primerNombre(type="text", name="")
-          label(for="primerNombre") Primer Nombre
-        .input-field.col.s6
-          input.validate#segundoNombre(type="text", name="")
-          label(for="segundoNombre") Segundo Nombre
-        .input-field.col.s5
-          input.validate#primerApellido(type="text", name="")
-          label(for="primerApellido") Primer Apellido
-        .input-field.col.s6
-          input.validate#segundoApellido(type="text", name="")
-          label(for="segundoApellido") Segundo Apellido
-        .input-field.col.s11
-          input.validate#nombreUsuario(type="text" name="")
-          label(for="nombreUsuario") Nombre de usuario
-        .input-field.col.s11
-          input.validate#corre(type="email" name="")
-          label(for="correo") Correa electrónico
-        .input-field.col.s5
-          input#password.validate(type="password", name="")
-          label(for="password") Contraseña
-        .input-field.col.s6
-          input#contraPassword.validate(type="password", name="")
-          label(for="contraPassword") Confirmar contraseña
-        .input-field.col.s11
-          input#direction.validate(type="text", name="")
-          label(for="direction") Dirección
-        .input-field.col.s6
-          input#telephone(type="tel", name="")
-          label(for="telephone") Numero de contacto
-        .input-field.col.s5
-          input#country(type="text", name="")
-          label(for="country") País
-        button.btn.waves-effect.waves-green.green.accent-4(type="submit") Crear cuenta
+    .card.z-depth-3
+      form.card-content#registrarse(action="/datos", method="POST", enctype="multipart/form-data" )
+        fieldset.row.container
+          .input-field.col.s5
+            input.validate#primerNombre(type="text", name="primerNombre" )
+            label(for="primerNombre") Primer Nombre
+          .input-field.col.s6
+            input.validate#segundoNombre(type="text", name="segundoNombre")
+            label(for="segundoNombre") Segundo Nombre
+          .input-field.col.s5
+            input.validate#primerApellido(type="text", name="primerApellido")
+            label(for="primerApellido") Primer Apellido
+          .input-field.col.s6
+            input.validate#segundoApellido(type="text", name="segundoApellido")
+            label(for="segundoApellido") Segundo Apellido
+          .input-field.col.s5
+            select#TipoDocumento(name="tipoDocumento")
+              option(selected,disabled) Seleccione
+              option(value="CC") Cedula de ciudadanía
+              option(value="CE") Cedula extranjera
+              option(value="NIT") Tarjeta de Identidad
+            label(for="TipoDocumento") Tipo de documento
+          .input-field.col.s6
+            input.validate#documento(type="number", name="documento")
+            label(for="documento") Numero de Documento
+          .input-field.file-field.col.s11
+            .btn-floating.btn.green.accent-5
+              span
+                i.material-icons add_photo_alternate
+              input.validate#foto(type="file" name="foto", accept="image/jpg, image/jpeg, image/png")
+            .file-path-wrapper
+              input.file-path.validate( accent="image/jpg, image/jpeg, image/png" placeholder="sube una imagen o foto" )
+          .input-field.col.s11
+            input.validate#corre(type="email" name="email")
+            label(for="correo") Correa electrónico
+          .input-field.col.s5
+            input#password.validate(type="password", name="password")
+            label(for="password") Contraseña
+          .input-field.col.s6
+            input#contraPassword.validate(type="password", name="contraPassword")
+            label(for="contraPassword") Confirmar contraseña
+          .input-field.col.s5
+            input#direction.validate(type="text", name="direction")
+            label(for="direction") Dirección
+          .input-field.col.s6
+            select#Genero(name="genero")
+              option(selected,disabled) Seleccione
+              option(value="M") Masculino
+              option(value="F") Femenino
+              option(value="Otro") Otro
+            label(for="Genero") Genero
+          .input-field.col.s5
+            input#telephone(type="tel", name="telephone")
+            label(for="telephone") Numero de contacto
+          .input-field.col.s6
+            input#country(type="text", name="country")
+            label(for="country", ) País
+      .card-action.container
+        button.btn.waves-effect.waves-green.green.accent-4(type="submit",form="registrarse") Crear cuenta
           i.material-icons.left check_box
