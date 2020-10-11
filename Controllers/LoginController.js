@@ -4,7 +4,7 @@
 class LoginController {
   index(){
     let index =(req,res)=>{
-      res.render('paginas view/login/login')
+      res.render('paginas view/login/login',{pretty:true})
     }
     return index;
   }

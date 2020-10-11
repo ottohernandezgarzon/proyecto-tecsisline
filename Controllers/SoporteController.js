@@ -4,7 +4,7 @@
 class SoporteController {
   index(){
     let index = (req,res)=>{
-      res.render('paginas view/soporte/soporte')
+      res.render('paginas view/soporte/soporte',{pretty:true})
     }
     return index;
   }

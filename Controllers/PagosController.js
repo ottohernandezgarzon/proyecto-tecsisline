@@ -4,7 +4,7 @@
 class PagosController {
   index(){
     let index = (req,res)=>{
-      res.render('paginas view/pago/pago')
+      res.render('paginas view/pago/pago',{pretty:true})
     }
     return index;
   }

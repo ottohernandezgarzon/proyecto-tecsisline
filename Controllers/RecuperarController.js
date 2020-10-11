@@ -4,7 +4,7 @@
 class RecuperarController{
   index(){
     let index=(req,res)=>{
-      res.render('paginas view/login/recuperar');
+      res.render('paginas view/login/recuperar',{pretty:true});
     }
     return index;
   }

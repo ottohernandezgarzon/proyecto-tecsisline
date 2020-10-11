@@ -4,7 +4,7 @@
 class ProductosController {
   index(){
     let index = (req,res)=>{
-      res.render('paginas view/producto/productos')
+      res.render('paginas view/producto/productos',{pretty:true})
     }
     return index;
   }

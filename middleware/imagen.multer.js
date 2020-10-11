@@ -7,7 +7,7 @@ const
 
 
 const storage= multer.diskStorage({
-  destination: pathJoin(__dirname,'../public/img/photo/upload'),
+  destination: pathJoin(__dirname,'../public/img/photo'),
   filename: (req, file,cb)=>{
     cb(null,file.originalname)
   },
@@ -27,4 +27,4 @@ module.exports = multer({
   fileFilter,
   limits:{fileSize:50000000},
 
-}).single('imagen')
+}).single('foto')

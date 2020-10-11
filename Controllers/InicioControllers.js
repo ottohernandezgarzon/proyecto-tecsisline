@@ -6,7 +6,7 @@
 class InicioController {
   index(){
     let index =(req,res)=>{
-      res.render('paginas view/inicio');
+      res.render('paginas view/inicio',{pretty:true});
     }
     return index;
   }

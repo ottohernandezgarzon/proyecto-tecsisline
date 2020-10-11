@@ -4,7 +4,7 @@ block titleMenu
 block contenido
   main#registrase.container
     .card.z-depth-3
-      form.card-content#registrarse(action="/datos", method="POST", enctype="multipart/form-data" )
+      form.card-content#registrarse(action="/registrarse", method="POST", enctype="multipart/form-data" )
         fieldset.row.container
           .input-field.col.s5
             input.validate#primerNombre(type="text", name="primerNombre" )
@@ -21,9 +21,9 @@ block contenido
           .input-field.col.s5
             select#TipoDocumento(name="tipoDocumento")
               option(selected,disabled) Seleccione
-              option(value="CC") Cedula de ciudadanía
-              option(value="CE") Cedula extranjera
-              option(value="NIT") Tarjeta de Identidad
+              option(value="1") Cedula de ciudadanía
+              option(value="2") Cedula extranjera
+              option(value="3") Tarjeta de Identidad
             label(for="TipoDocumento") Tipo de documento
           .input-field.col.s6
             input.validate#documento(type="number", name="documento")
@@ -32,9 +32,10 @@ block contenido
             .btn-floating.btn.green.accent-5
               span
                 i.material-icons add_photo_alternate
-              input.validate#foto(type="file" name="foto", accept="image/jpg, image/jpeg, image/png")
+              input.validate#foto(type="file" name="foto", accept="image/jpeg, image/png")
             .file-path-wrapper
-              input.file-path.validate( accent="image/jpg, image/jpeg, image/png" placeholder="sube una imagen o foto" )
+              input.file-path.validate(type="text" name="fotoPath" accent="image/jpeg,  image/png" placeholder="sube una imagen o foto" )
+              span.red-text=error
           .input-field.col.s11
             input.validate#corre(type="email" name="email")
             label(for="correo") Correa electrónico
@@ -44,14 +45,17 @@ block contenido
           .input-field.col.s6
             input#contraPassword.validate(type="password", name="contraPassword")
             label(for="contraPassword") Confirmar contraseña
-          .input-field.col.s5
+          .input-field.col.s4
+            input#codigoPostal.validate(type="text", name="codigoPostal")
+            label(for="codigoPostal") Código Postal
+          .input-field.col.s4
             input#direction.validate(type="text", name="direction")
             label(for="direction") Dirección
-          .input-field.col.s6
+          .input-field.col.s4
             select#Genero(name="genero")
               option(selected,disabled) Seleccione
-              option(value="M") Masculino
-              option(value="F") Femenino
+              option(value="Masculino") Masculino
+              option(value="Femenino") Femenino
               option(value="Otro") Otro
             label(for="Genero") Genero
           .input-field.col.s5

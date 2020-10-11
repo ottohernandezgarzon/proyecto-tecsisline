@@ -4,7 +4,7 @@
 class AutentificarseController {
   index(){
     let index =(req,res)=>{
-      res.render('paginas view/login/autentificarse');
+      res.render('paginas view/login/autentificarse',{pretty:true});
     }
     return index;
   }

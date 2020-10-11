@@ -5,7 +5,7 @@
 class ContactosController  {
   index() {
     let index = (req, res) => {
-      res.render('paginas view/contactos/contactos')
+      res.render('paginas view/contactos/contactos',{pretty:true})
     }
     return index;
   }

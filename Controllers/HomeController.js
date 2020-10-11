@@ -6,7 +6,7 @@ class HomeController {
 
   index(){
     let index = (req,res)=>{
-      res.render('index');
+      res.render('index',{pretty:true});
     }
     return  index;
   }

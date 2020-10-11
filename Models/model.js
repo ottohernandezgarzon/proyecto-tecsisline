@@ -18,5 +18,6 @@ db ={};
 db.Sequelize=Sequelize;
 db.sequelize=sequelize;
 
-db.user = require('./RegistrarseModel')(sequelize,Sequelize);
+db.user = require('./usuarios')(sequelize,Sequelize);
+db.direction = require('./direcciones')(sequelize,Sequelize);
 module.exports = db
