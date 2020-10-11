@@ -1,9 +1,12 @@
+const model = require('../Models/model')
+
 ' use strict '
 
-
-files = require('path').join,
-fs = require('fs')
 // Recursos
+const {user, direction}=require('../Models/model'),
+files = require('path').join,
+fs = require('fs'),
+imagePath= files(__dirname, '../public/img/photo')
 
 class RegistrarseController{
   index(){
@@ -12,29 +15,37 @@ class RegistrarseController{
     }
     return index;
   }
-  create(datos){
-    let create = (req,res)=>{
-      // res.redirect('/inicio')
-      // const
-      // // inputs = JSON.stringify(req.body),
-      // formaData = new FormData(req.body),
-      // datos =
-      // {
-      //   primerNombre : req.formData.ap(primerNombre),
-      //   segundoNombre : req.body. segundoNombre,
-      //   primerApellido :req.body.primerApellido,
-      //   segundoApellido:req.body.segundoApellido,
-      //   foto: req.body.foto,
-      //   nombreUsuario:req.body.nombreUsuario,
-      //   email: req.body.email,
-      //   password:req.body.password,
-      //   contraPassword:req.body.contraPassword,
-      //   direction:req.body.direction,
-      //   telephone:req.body.telephone,
-      //   country:req.body.country
-      // }
-      console.log(req.body);
-      res.redirect('/inicio');
+  create() {
+    let create = (req, res) => {
+      direction.belongsTo(user)
+      user.hasMany(direction)
+      user.create({
+        primerNombre: req.body.primerNombre,
+        segundoNombre: req.body.segundoNombre,
+        primerApellido: req.body.primerApellido,
+        segundoApellido: req.body.segundoApellido,
+        tipoDocumentoId:req.body.tipoDocumento,
+        documento:req.body.documento,
+        fotoPerfil:fs.readFileSync(imagePath +'/'+req.file.filename,'base64'),
+        formatoFoto:req.file.mimetype,
+        nombreUsuario: req.body.primerNombre+' '+req.body.primerApellido,
+        correo: req.body.email,
+        contraseña: req.body.password,
+        genero:req.body.genero,
+        telefone: req.body.telephone,
+        rolesId:3,
+        pais: req.body.country,
+        direcciones: {
+          direccion: req.body.direction,
+          codiogoPostal: req.body.codiogoPostal
+        }
+      }, {
+        include: [direction]
+      }).then(()=>{
+        fs.unlinkSync(imagePath +'/'+req.file.filename,'base64')
+        res.redirect('/inicio')
+      })
+
     }
     return create
   }
