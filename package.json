@@ -1,11 +1,11 @@
-{
+i{
   "name": "tecsisline",
   "version": "0.0.1",
   "description": "Proyecto de sena  con tema de tienda virtual ",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev-nodemon": "nodemon index.js -i public\\js\\ -e js,json "
+    "start": "node index.js|| npm i",
+    "dev-nodemon": "nodemon index.js -i public\\js\\ -e js,json || npm i "
   },
   "authors": "Otoniel Hernández Garzón, Anderson Stiven Yaguma Diaz, Jhostin David Cespedes Campo",
   "license": "MIT",
