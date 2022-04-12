@@ -16,8 +16,8 @@ class RegistrarseController{
     return index;
   }
   create() {
-    let create = (req, res) => {
-      direction.belongsTo(user)
+		let create = (req, res) => {
+      /*direction.belongsTo(user)
       user.hasMany(direction)
       user.create({
         primerNombre: req.body.primerNombre,
@@ -44,11 +44,14 @@ class RegistrarseController{
       }).then(()=>{
         fs.unlinkSync(imagePath +'/'+req.file.filename,'base64')
         res.redirect('/inicio')
-      })
+      })*/
 
+      console.log(req.body);
+      let usuario = `${req.body.primerNombre} ${req.body.primerApellido}`;
+      res.send(usuario);
     }
-    return create
-  }
+		return create;
+	}
 }
 
 

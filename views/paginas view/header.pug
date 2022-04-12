@@ -1,15 +1,15 @@
 extends layouts
 block header
   header#header.z-depth-3.row
-    .encabezado.col.s7.row
+    .encabezado.col.l7.m7.row
       h4.col Tecsisline 
       .menuBtn.col
         a#IniciarSesion.btn.waves-effect.waves-green.white.black-text( href="/login") Iniciar Sesion 
         a#Registrarse.btn.waves-effect.waves-green.white.black-text(href="/registrarse") Registrarse
-    .col.s2.right
+    .col.l2.right
       .perfil.right
         img.fotoPerfil(src="/img/icons/perfil.png", alt="Foto de perfil")
-        a.btn.btn-small.btn-flat.dropdown-trigger(data-target="subMenuPerfil") Nombre usuario
+        a.nombre-perfil.btn.btn-small.btn-flat.dropdown-trigger(data-target="subMenuPerfil") Nombre usuario
         ul#subMenuPerfil.dropdown-content
           each listPerfil in ["Perfil","configuración","Cerrar",]
             li 
@@ -18,7 +18,7 @@ block header
           img.icon.facebook.tiny(src="/img/icons/facebook-logo.png", alt="facebook-logo")
           img.icon.twitter(src="/img/icons/twitter-logo.png", alt="twitter-logo")
           img.icon.whatsapp(src="/img/icons/whatsapp-logo.png", alt="whatsapp-logo")  
-    .col.s7
+    .col.l7.m7
       nav#menu.grey.lighten-2
         ul
           li.inicio
@@ -37,8 +37,8 @@ block header
             //i#r.material-icons shopping_cart
             a(href="/pago") Compras
           
-    .col.s3
+    .col.l2.m2
       .search.input-field.center-align
         i.material-icons search
-        input#search.col.s6(type="search", name="buscar" placeholder="Buscar")
+        input#search.col.l6.m5(type="search", name="buscar" placeholder="Buscar")
   block contenido

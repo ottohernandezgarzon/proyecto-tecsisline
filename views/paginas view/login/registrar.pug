@@ -4,56 +4,67 @@ block titleMenu
 block contenido
   main#registrase.container
     .card.z-depth-3
-      form.card-content#registrarse(action="/registrarse", method="POST", enctype="multipart/form-data" )
+      //- form.card-content#form-registrar(action="/registrarse", method="POST", enctype="multipart/form-data" )
+      form.card-content#form-registrar(action="/registrarse", method="POST")
+
+      
         fieldset.row.container
           .input-field.col.s5
-            input.validate#primerNombre(type="text", name="primerNombre" )
+            input.validate#primerNombre(type="text" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü]+$" name="primerNombre" required)
             label(for="primerNombre") Primer Nombre
+            span.helper-text(data-error="El campo obligatorio esta vació", data-success="Dato Valido") (*)Campo obligatorio
           .input-field.col.s6
-            input.validate#segundoNombre(type="text", name="segundoNombre")
+            input#segundoNombre(type="text", pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü]+$" name="segundoNombre")
             label(for="segundoNombre") Segundo Nombre
+            span.helper-text(data-error="El campo obligatorio esta vació", data-success="Dato Valido")
           .input-field.col.s5
-            input.validate#primerApellido(type="text", name="primerApellido")
+            input.validate#primerApellido(type="text",pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü]+$" name="primerApellido" required)
             label(for="primerApellido") Primer Apellido
+            span.helper-text(data-error="" data-success="Dato Valido") (*)Campo obligatorio
           .input-field.col.s6
-            input.validate#segundoApellido(type="text", name="segundoApellido")
+            input#segundoApellido(type="text",pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü]+$" name="segundoApellido")
             label(for="segundoApellido") Segundo Apellido
+            span.helper-text(data-error="", data-success="Dato Valido")
           .input-field.col.s5
-            select#TipoDocumento(name="tipoDocumento")
-              option(selected,disabled) Seleccione
+            select#tipoDocumento(name="tipoDocumento"  )
+              option(value="" selected,disabled) Seleccione
               option(value="1") Cedula de ciudadanía
               option(value="2") Cedula extranjera
               option(value="3") Tarjeta de Identidad
-            label(for="TipoDocumento") Tipo de documento
-          .input-field.col.s6
-            input.validate#documento(type="number", name="documento")
+            label(for="tipoDocumento") Tipo de documento
+            span.helper-text(data-error="No has seleccionado una opción", data-success="Selección valida") (*)Campo obligatorio
+          .input-field.col.s
+            input.validate#documento(type="number" pattern="^[0-9]+$" name="documento" required)
             label(for="documento") Numero de Documento
+            span.helper-text(data-error="El campo obligatorio esta vació", data-success="Dato Valido") (*)Campo obligatorio
           .input-field.file-field.col.s11
             .btn-floating.btn.green.accent-5
               span
                 i.material-icons add_photo_alternate
-              input.validate#foto(type="file" name="foto", accept="image/jpeg, image/png")
+              input#foto(type="file" name="foto", accept="image/jpeg, image/png"  focus="disabled")
             .file-path-wrapper
               input.file-path.validate(type="text" name="fotoPath" accent="image/jpeg,  image/png" placeholder="sube una imagen o foto" )
-              span.red-text=error
           .input-field.col.s11
-            input.validate#corre(type="email" name="email")
+            input#email.validate(type="email" pattern="^[a-z0-9]+(\.[_a-z0-9])*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" name="email" required)
             label(for="correo") Correa electrónico
+            span.helper-text(data-error="Verifique su correo electrónico", data-success="Dato Valido") (*)Campo obligatorio
           .input-field.col.s5
-            input#password.validate(type="password", name="password")
+            input#password.validate(type="password", name="password" required)
             label(for="password") Contraseña
+            span.helper-text(data-error="El campo obligatorio esta vació", data-success="Dato Valido") (*)Campo obligatorio
           .input-field.col.s6
-            input#contraPassword.validate(type="password", name="contraPassword")
+            input#contraPassword.validate(type="password", name="contraPassword" required)
             label(for="contraPassword") Confirmar contraseña
+            span.helper-text(data-error="El campo obligatorio esta vació", data-success="Dato Valido") (*)Campo obligatorio
           .input-field.col.s4
-            input#codigoPostal.validate(type="text", name="codigoPostal")
+            input#codigoPostal(type="text", name="codigoPostal")
             label(for="codigoPostal") Código Postal
           .input-field.col.s4
-            input#direction.validate(type="text", name="direction")
+            input#direction(type="text", name="direction")
             label(for="direction") Dirección
           .input-field.col.s4
-            select#Genero(name="genero")
-              option(selected,disabled) Seleccione
+            select#genero.validate(name="genero")
+              option(value="No definido",selected,disabled) Seleccione
               option(value="Masculino") Masculino
               option(value="Femenino") Femenino
               option(value="Otro") Otro
@@ -65,5 +76,5 @@ block contenido
             input#country(type="text", name="country")
             label(for="country", ) País
       .card-action.container
-        button.btn.waves-effect.waves-green.green.accent-4(type="submit",form="registrarse") Crear cuenta
+        button.btn.waves-effect.waves-green.green.accent-4(type="submit",form="registrarse" disabled) Crear cuenta
           i.material-icons.left check_box

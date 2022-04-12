@@ -102,6 +102,10 @@
   height: 14ex;
   float: right;
 }
+.nombre-perfil{
+  font-size: 1.28vw;
+  width: 15vw; 
+}
 .material-icons{
   font-size: x-large;
 }
