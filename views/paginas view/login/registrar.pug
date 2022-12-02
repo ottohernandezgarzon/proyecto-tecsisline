@@ -20,7 +20,7 @@ block contenido
           .input-field.col.s5
             input.validate#primerApellido(type="text",pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü]+$" name="primerApellido" required)
             label(for="primerApellido") Primer Apellido
-            span.helper-text(data-error="" data-success="Dato Valido") (*)Campo obligatorio
+            span.helper-text(data-error="El campo obligatorio esta vació" data-success="Dato Valido") (*)Campo obligatorio
           .input-field.col.s6
             input#segundoApellido(type="text",pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü]+$" name="segundoApellido")
             label(for="segundoApellido") Segundo Apellido
@@ -28,8 +28,8 @@ block contenido
           .input-field.col.s5
             select#tipoDocumento(name="tipoDocumento"  )
               option(value="" selected,disabled) Seleccione
-              option(value="1") Cedula de ciudadanía
-              option(value="2") Cedula extranjera
+              option(value="1") Cédula de ciudadanía
+              option(value="2") Cédula extranjera
               option(value="3") Tarjeta de Identidad
             label(for="tipoDocumento") Tipo de documento
             span.helper-text(data-error="No has seleccionado una opción", data-success="Selección valida") (*)Campo obligatorio

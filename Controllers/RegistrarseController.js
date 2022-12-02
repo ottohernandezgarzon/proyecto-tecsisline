@@ -3,7 +3,7 @@ const model = require('../Models/model')
 ' use strict '
 
 // Recursos
-const {user, direction}=require('../Models/model'),
+const user=require('../Models/model').user,
 files = require('path').join,
 fs = require('fs'),
 imagePath= files(__dirname, '../public/img/photo')
@@ -54,6 +54,6 @@ class RegistrarseController{
 	}
 }
 
-
+console.log(user);
 const registrarse = new RegistrarseController();
 module.exports=registrarse;

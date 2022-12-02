@@ -9,7 +9,7 @@ bodyParser = require('body-parser');
 
 var port = port ? 3000 : 8080;
 
-// db.sequelize.sync()
+db.sequelize.sync()
 
 // configuración de los recursos o paquetes
 app

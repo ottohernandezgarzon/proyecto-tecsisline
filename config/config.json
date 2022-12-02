@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "metallica21",
+    "database": "pruebas_sequelize",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "metallica21",
+    "database": "pruebas_sequelize",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "metallica21",
+    "database": "pruebas_sequelize",
+    "host": "localhost",
+    "dialect": "mysql"
+  }
+}

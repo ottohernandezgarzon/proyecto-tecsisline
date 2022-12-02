@@ -9,18 +9,20 @@ export default function valid() {
 				pattern = input.pattern || input.dataset.pattern,
 				dataError = input.nextSibling.nextSibling.dataset;
 			const $pattern = new RegExp(pattern);
+			console.log(dataError);
 			if (pattern && input.value !== "") {
 				return !$pattern.exec(input.value)
 					? d.getElementById(input.name).classList.add("invalid") +
-							(dataError.error = "No puede llevar numeros ni espacios ")
+							(dataError.error = "No puede llevar números ni espacios ")
 					: d.getElementById(input.name).classList.replace("invalid", "valid");
 			}
-			if ((input.name = "documento")) {
+			/* if ((input.name = "documento")) {
 				return !$pattern.exec(input.value)
 					? d.getElementById(input.name).classList.add("invalid") +
 							(dataError.error = "No puede llevar puntos ni comas ")
 					: d.getElementById(input.name).classList.replace("invalid", "valid");
-			}
+			} 
+			*/
 			if (input.name === "contraPassword") {
 				let password = d.getElementById("password"),
 					confirm = d.getElementById("contraPassword");
