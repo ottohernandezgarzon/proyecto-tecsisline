@@ -1,6 +1,6 @@
 {
   "recommendations": [
-    "mkaufman.htmlhint",
-    "mkaufman.HTMLHint"
+    "mkaufman.ejshint",
+    "mkaufman.ejsHint"
   ]
 }

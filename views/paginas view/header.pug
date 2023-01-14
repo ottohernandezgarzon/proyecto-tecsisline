@@ -11,7 +11,7 @@ block header
         img.fotoPerfil(src="/img/icons/perfil.png", alt="Foto de perfil")
         a.nombre-perfil.btn.btn-small.btn-flat.dropdown-trigger(data-target="subMenuPerfil") Nombre usuario
         ul#subMenuPerfil.dropdown-content
-          each listPerfil in ["Perfil","configuración","Cerrar",]
+          each listPerfil in ["Perfil","configuración","Administracion","Cerrar",]
             li 
               a(href=listPerfil)=listPerfil
         .perfilIconsRedesSociales

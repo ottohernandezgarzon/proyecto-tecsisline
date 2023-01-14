@@ -5,9 +5,7 @@ block contenido
   main#registrase.container
     .card.z-depth-3
       //- form.card-content#form-registrar(action="/registrarse", method="POST", enctype="multipart/form-data" )
-      form.card-content#form-registrar(action="/registrarse", method="POST")
-
-      
+      form.card-content#form-registrar(action="/registrar", method="POST")
         fieldset.row.container
           .input-field.col.s5
             input.validate#primerNombre(type="text" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü]+$" name="primerNombre" required)
@@ -63,12 +61,12 @@ block contenido
             input#direction(type="text", name="direction")
             label(for="direction") Dirección
           .input-field.col.s4
-            select#genero.validate(name="genero")
-              option(value="No definido",selected,disabled) Seleccione
-              option(value="Masculino") Masculino
-              option(value="Femenino") Femenino
-              option(value="Otro") Otro
-            label(for="Genero") Genero
+            select#sexo.validate(name="sexo")
+              option(value="",selected,disabled) Seleccione
+              option(value="1") Masculino
+              option(value="3") Femenino
+              option(value="3") Otro
+            label(for="sexo") sexo
           .input-field.col.s5
             input#telephone(type="tel", name="telephone")
             label(for="telephone") Numero de contacto
@@ -76,5 +74,5 @@ block contenido
             input#country(type="text", name="country")
             label(for="country", ) País
       .card-action.container
-        button.btn.waves-effect.waves-green.green.accent-4(type="submit",form="registrarse" disabled) Crear cuenta
+        button.btn.waves-effect.waves-green.green.accent-4(type="submit",form="form-registrar" ) Crear cuenta
           i.material-icons.left check_box

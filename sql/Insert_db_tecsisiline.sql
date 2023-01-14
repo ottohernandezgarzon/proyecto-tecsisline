@@ -1,4 +1,3 @@
-use tecsisline; 
 
 insert into tipo_documento values 
 (1,'CC'),

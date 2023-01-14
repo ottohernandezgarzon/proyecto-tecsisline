@@ -2,13 +2,7 @@
   "jshint.options": {
     "esversion": 7
   },
-  "cSpell.words": [
-    "codigo",
-    "Jhostin",
-    "Otoniel",
-    "Tecsisline",
-    "Yaguma"
-  ],
+  "cSpell.words": ["autoincrement", "codigo", "Jhostin", "Otoniel", "Tecsisline", "Yaguma"],
   "editor.wordWrap": "wordWrapColumn",
   "sqltools.connections": [
     {

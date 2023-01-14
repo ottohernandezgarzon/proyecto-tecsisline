@@ -3,7 +3,7 @@
 const {
   user,
   direction
-} = require('../Models/model')
+} = require('../Models/Model')
 
 // Clase PerfilController con herencia a PerfilModel
 class PerfilController {

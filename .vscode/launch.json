@@ -15,7 +15,7 @@
       "name": "Launch Edge",
       "request": "launch",
       "type": "pwa-msedge",
-      "url": "http://localhost:8080/registrarse",
+      "url": "http://localhost/dashboard",
       "webRoot": "${workspaceFolder}"
     },
     {
