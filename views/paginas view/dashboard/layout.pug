@@ -1,0 +1,190 @@
+//
+
+  //- =========================================================
+  //- * * Black Dashboard - v1.0.1
+  //- =========================================================
+
+  //- * Product Page: https://www.creative-tim.com/product/black-dashboard
+  //- * Copyright 2019 Creative Tim (https://www.creative-tim.com)
+
+
+  //- * Coded by Creative Tim
+
+  //- =========================================================
+
+  //- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+  //- 
+doctype html 
+html(lang="es")
+  head 
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width,initial-scale=1,shrink-to-fit=no")
+    link(rel="apple-touch-icon", sizes="76x76", href="assets/img/apple-icon.png")
+    //- link(rel="icon", type="image/png", href="assets/img/favicon.png")
+    title administrador
+
+    //      Fonts and icons     
+    link(href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800", rel="stylesheet")
+    link(href="https://use.fontawesome.com/releases/v5.0.6/css/all.css", rel="stylesheet")
+    //  Nucleo Icons 
+    link(href="assets/css/nucleo-icons.css", rel="stylesheet")
+    //  CSS Files 
+    link(href="assets/css/black-dashboard.css?v=1.0.0", rel="stylesheet")
+    link(href="../assets/css/black-dashboard.css?v=1.0.0", rel="stylesheet")
+    
+  body 
+    .wrapper
+      .sidebar(data="blue")
+        //
+
+          Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red"
+
+        .sidebar-wrapper
+          .logo
+            a.simple-text.logo-mini(href="javascript:void(0)").
+
+              CT
+
+            a.simple-text.logo-normal(href="javascript:void(0)").
+
+              Creative Tim
+
+          ul.nav
+            li
+              a(href="Administracion")
+                i.tim-icons.icon-chart-pie-36
+                p Administración
+            li
+              a(href="users")
+                i.tim-icons.icon-single-02
+                p perfiles de usuario
+            li
+              a(href="tables")
+                i.tim-icons.icon-puzzle-10
+                p Table List
+      .main-panel
+        //  Navbar 
+        nav.navbar.navbar-expand-lg.navbar-absolute.navbar-transparent
+          .container-fluid
+            .navbar-wrapper
+              .navbar-toggle.d-inline
+                button.navbar-toggler(type="button")
+                  span.navbar-toggler-bar.bar1
+                  span.navbar-toggler-bar.bar2
+                  span.navbar-toggler-bar.bar3
+              a.navbar-brand(href="javascript:void(0)")=title
+            button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navigation", aria-expanded="false", aria-label="Toggle navigation")
+              span.navbar-toggler-bar.navbar-kebab
+              span.navbar-toggler-bar.navbar-kebab
+              span.navbar-toggler-bar.navbar-kebab
+            .collapse.navbar-collapse#navigation
+              ul.navbar-nav.ml-auto
+                li.search-bar.input-group
+                  button.btn.btn-link#search-button(data-toggle="modal", data-target="#searchModal")
+                    i.tim-icons.icon-zoom-split
+                    span.d-lg-none.d-md-block Search
+                li.dropdown.nav-item
+                  a.dropdown-toggle.nav-link(href="javascript:void(0)", data-toggle="dropdown")
+                    .notification.d-none.d-lg-block.d-xl-block
+                    i.tim-icons.icon-sound-wave
+                    p.d-lg-none.
+
+                      Notifications
+
+                  ul.dropdown-menu.dropdown-menu-right.dropdown-navbar
+                    li.nav-link
+                      a.nav-item.dropdown-item(href="#") Mike John responded to your email
+                    li.nav-link
+                      a.nav-item.dropdown-item(href="javascript:void(0)") You have 5 more tasks
+                    li.nav-link
+                      a.nav-item.dropdown-item(href="javascript:void(0)") Your friend Michael is in town
+                    li.nav-link
+                      a.nav-item.dropdown-item(href="javascript:void(0)") Another notification
+                    li.nav-link
+                      a.nav-item.dropdown-item(href="javascript:void(0)") Another one
+                li.dropdown.nav-item
+                  a.dropdown-toggle.nav-link(href="#", data-toggle="dropdown")
+                    .photo
+                      img(src="assets/img/anime3.png", alt="Profile Photo")
+                    b.caret.d-none.d-lg-block.d-xl-block
+                    p.d-lg-none.
+
+                      Log out
+
+                  ul.dropdown-menu.dropdown-navbar
+                    li.nav-link
+                      a.nav-item.dropdown-item(href="javascript:void(0)") Profile
+                    li.nav-link
+                      a.nav-item.dropdown-item(href="javascript:void(0)") Settings
+                    li.dropdown-divider
+                    li.nav-link
+                      a.nav-item.dropdown-item(href="javascript:void(0)") Log out
+                li.separator.d-lg-none
+        .modal.modal-search.fade#searchModal(tabindex="-1", role="dialog", aria-labelledby="searchModal", aria-hidden="true")
+          .modal-dialog(role="document")
+            .modal-content
+              .modal-header
+                input.form-control#inlineFormInputGroup(type="text", placeholder="SEARCH")
+                button.close(type="button", data-dismiss="modal", aria-label="Close")
+                  i.tim-icons.icon-simple-remove
+        //  End Navbar 
+          //- inicio contenido de vista 
+        block contenido 
+          //- fin contenido de vista
+        footer.footer
+          .container-fluid
+            ul.nav
+              li.nav-item
+                a.nav-link(href="javascript:void(0)").
+
+                  Creative Tim
+
+              li.nav-item
+                a.nav-link(href="javascript:void(0)").
+
+                  About Us
+
+              li.nav-item
+                a.nav-link(href="javascript:void(0)").
+
+                  Blog
+
+            .copyright
+              | ©
+
+              script.
+
+                document.write(new Date().getFullYear())
+
+              | 2018 made with 
+              i.tim-icons.icon-heart-2
+              |  by
+
+              a(href="javascript:void(0)", target="_blank") Creative Tim
+              |  for a better web.
+
+
+    //    Core JS Files   
+    script(src="assets/js/core/jquery.min.js")
+    script(src="assets/js/core/popper.min.js")
+    script(src="assets/js/core/bootstrap.min.js")
+    script(src="assets/js/plugins/perfect-scrollbar.jquery.min.js")
+    //   Google Maps Plugin    
+    //  Place this tag in your head or just before your close body tag. 
+    script(src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE")
+    //  Chart JS 
+    script(src="assets/js/plugins/chartjs.min.js")
+    //   Notifications Plugin    
+    script(src="assets/js/plugins/bootstrap-notify.js")
+    //  Control Center for Black Dashboard: parallax effects, scripts for the example pages etc 
+    script(src="assets/js/black-dashboard.js?v=1.0.0")
+    //  Black Dashboard DEMO methods, don't include it in your project! 
+
+    script(src="https://cdn.trackjs.com/agent/v3/latest/t.js")
+    script.
+
+      window.TrackJS &&
+        TrackJS.install({
+          token: "ee6fab19c5a04ac1a32a645abde4613a",
+          application: "black-dashboard-free"
+        })

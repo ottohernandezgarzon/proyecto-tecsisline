@@ -1,51 +1,48 @@
 import valid from "./validar.js";
 //  Configuraciones de Materialize con Query
 $(document).ready(function () {
-	//  selectores dinámicos
-	$("select").formSelect();
-	//  Carousel
-	$(".carousel").carousel({
-		duration: 1000,
-		dist: -150,
-	});
-	autoplay();
-	// mueve el carousel cada tres segundos
-	function autoplay() {
-		$(".carousel").carousel("next");
-		setTimeout(autoplay, 5000);
-	}
-	// Slider
-	$(".slider").slider();
-	// Inputs
-	M.updateTextFields();
-	$("input#input_text, textarea#textarea2").characterCounter();
-	// Dropdown
-	$(".dropdown-trigger").dropdown({
-		autoTrigger: false,
-	});
-	$(".modal").modal({ endingTop: 35 });
+  //  selectores dinámicos
+  $("select").formSelect();
+  //  Carousel
+  $(".carousel").carousel({ duration: 1000, dist: -150 });
+  autoplay();
+  // mueve el carousel cada tres segundos
+  function autoplay() {
+    $(".carousel").carousel("next");
+    setTimeout(autoplay, 5000);
+  }
+  // Slider
+  $(".slider").slider();
+  // Inputs
+  M.updateTextFields();
+  $("input#input_text, textarea#textarea2").characterCounter();
+  // Dropdown
+  $(".dropdown-trigger").dropdown({
+    autoTrigger: false,
+  });
+  $(".modal").modal({ endingTop: 35 });
 });
 function tarjeta() {
-	M.toast({
-		html: "Se agrego su tarjeta con éxito.",
-		classes: "green",
-	});
+  M.toast({
+    html: "Se agrego su tarjeta con éxito.",
+    classes: "green",
+  });
 }
 function efecty() {
-	M.toast({
-		html: "Selecciono efecty",
-		classes: "green",
-	});
+  M.toast({
+    html: "Selecciono efecty",
+    classes: "green",
+  });
 }
 function baloto() {
-	M.toast({
-		html: "Selecciono Via Baloto",
-		classes: "green",
-	});
+  M.toast({
+    html: "Selecciono Via Baloto",
+    classes: "green",
+  });
 }
 
 // Javascript puro
 
 document.addEventListener("DOMContentLoaded", (e) => {
-	valid();
+  valid();
 });

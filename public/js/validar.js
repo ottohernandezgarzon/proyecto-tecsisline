@@ -16,13 +16,6 @@ export default function valid() {
 							(dataError.error = "No puede llevar números ni espacios ")
 					: d.getElementById(input.name).classList.replace("invalid", "valid");
 			}
-			/* if ((input.name = "documento")) {
-				return !$pattern.exec(input.value)
-					? d.getElementById(input.name).classList.add("invalid") +
-							(dataError.error = "No puede llevar puntos ni comas ")
-					: d.getElementById(input.name).classList.replace("invalid", "valid");
-			} 
-			*/
 			if (input.name === "contraPassword") {
 				let password = d.getElementById("password"),
 					confirm = d.getElementById("contraPassword");
