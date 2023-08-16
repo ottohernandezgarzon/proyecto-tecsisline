@@ -14,5 +14,5 @@ jobs:
           on_pr: 'Code Review 2'
           on_merge: 'Testing'
         env:
-          NOTION_KEY: ${{ secrets.NotionKey }} 
+          NOTION_KEY: v02%3Auser_token_or_cookies%3AFcIX4xKcZo4_GVvSjXY6jsR1mwtwDdBL0MmkfjRcKJnprM_UAUsADxbX1IF6IDp3RiSFMmqFG6znyTPfRSclhcl3IT1sFo1VR6BewcjLrN1Y6W66imJXLNHDOMkHOYiLAfT5
           
