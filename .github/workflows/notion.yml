@@ -1,0 +1,13 @@
+name: Add PR to Notion
+on:
+  pull_request:
+    types: [opened]
+jobs:
+  notion:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update notion page
+        uses: kadaradam/notion-pr-link@latest
+        with:
+          notion_secret: secret_bhv4rLEi7luwJY4erVV3qAZhu0UzCDZLSDSfFvUdEi1
+          notion_prop: PR
