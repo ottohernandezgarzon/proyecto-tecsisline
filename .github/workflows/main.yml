@@ -8,7 +8,7 @@ jobs:
     name: Updates Notion Card
     steps:
       - name: Updates to Code Review
-        uses: senaceet/proyecto-tecsisline@main
+        uses: senaceet/proyecto-tecsisline@ottohernandezgarzon-patch-1
         with:
           page_property: 'Status'
           on_pr: 'Code Review 2'
