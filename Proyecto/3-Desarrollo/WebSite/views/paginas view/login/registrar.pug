@@ -1,0 +1,42 @@
+extends ../header
+block titleMenu
+  title Registrarse
+block contenido
+  main#registrase.container
+    .row.card.z-depth-3
+      form.container(action="#", method="post")
+        .input-field.col.s5
+          input.validate#primerNombre(type="text", name="")
+          label(for="primerNombre") Primer Nombre
+        .input-field.col.s6
+          input.validate#segundoNombre(type="text", name="")
+          label(for="segundoNombre") Segundo Nombre
+        .input-field.col.s5
+          input.validate#primerApellido(type="text", name="")
+          label(for="primerApellido") Primer Apellido
+        .input-field.col.s6
+          input.validate#segundoApellido(type="text", name="")
+          label(for="segundoApellido") Segundo Apellido
+        .input-field.col.s11
+          input.validate#nombreUsuario(type="text" name="")
+          label(for="nombreUsuario") Nombre de usuario
+        .input-field.col.s11
+          input.validate#corre(type="email" name="")
+          label(for="correo") Correa electrónico
+        .input-field.col.s5
+          input#password.validate(type="password", name="")
+          label(for="password") Contraseña
+        .input-field.col.s6
+          input#contraPassword.validate(type="password", name="")
+          label(for="contraPassword") Confirmar contraseña
+        .input-field.col.s11
+          input#direction.validate(type="text", name="")
+          label(for="direction") Dirección
+        .input-field.col.s6
+          input#telephone(type="tel", name="")
+          label(for="telephone") Numero de contacto
+        .input-field.col.s5
+          input#country(type="text", name="")
+          label(for="country") País
+        button.btn.waves-effect.waves-green.green.accent-4(type="submit") Crear cuenta
+          i.material-icons.left check_box

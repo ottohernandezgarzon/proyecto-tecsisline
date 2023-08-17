@@ -1,0 +1,52 @@
+extends ../header
+block titleMenu
+  title Perfil
+block contenido
+  main#perfiles.container
+    .actualizar.container
+      form.card(action="", method="post")
+        .card-content.container
+          .primerNombre.row
+            span.col.s6 Primer Nombre
+            input#primerNombre.right.col.s4(type="text", name="")
+          .segundoNombre.row
+            span.col.s6 Segundo Nombre
+            input#segundoNosmbre.right.col.s4(type="text", name="")
+          .primerApellido.row
+            span.col.s6 Primer Apellido
+            input#primerApellido.right.col.s4(type="text", name="")
+          .segundoApellido.row
+            span.col.s6 Segundo Apellido
+            input#segundoApellido.right.col.s4(type="text", name="")
+          .nombreUsuario.row
+            span.col.s6 Nombre de usuario
+            input#nombreUsuario.right.col.s4(type="text", name="")
+          .correo.row
+            span.col.s6 Correo electrónico
+            input#correo.right.col.s4(type="email", name="")
+          .password.row
+            span.col.s6 Contraseña
+            input#password.right.col.s4(type="password", name="")
+          .contraPassword.row
+            span.col.s6 Confirmar Contraseña
+            input#contraPassword.right.col.s4(type="password", name="")
+          .direction.row
+            span.col.s6 Dirección
+            input#direction.right.col.s4(type="text", name="")
+          .county.row
+            span.col.s6 País
+            input#country.right.col.s4(type="text", name="")
+          .telephone.row
+            span.col.s6 Numero de contacto 
+            input#telephone.right.col.s4(type="tel", name="")
+          .tipoCargo.row
+            span.col.s6 Tipo de cargo  
+            input#tipoCargo.right.col.s4(type="text", name="" placeholder="Cliente" disabled )
+            
+            .a(href="#modalGuardar").btn.modal-trigger.green Guardar cambios
+            #modalGuardar.modal
+              .modal-content.center
+                h4.center.container datos guardados 
+                p.center.text Se han actualizado los datos correctamente.
+              .modal-footer
+                a.modal-close.waves-effect.waves-green.btn-flat.red.white-text cerrar
