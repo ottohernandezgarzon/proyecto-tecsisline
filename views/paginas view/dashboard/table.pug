@@ -1,0 +1,49 @@
+extends layout.pug
+block contenido
+  .content
+    .row
+      .col-md-12
+        .card
+          .card-header.row
+            .col
+              h4.card-title=nameTable
+            .col
+              a.btn.btn-primary(href="/registrarse") registrar usuario
+          .card-body
+            .table-responsive
+              table.table 
+                thead.text-primary
+                  tr
+                    th Numero documento
+                    th tipo documento
+                    th Primer Nombre
+                    th Segundo Nombre
+                    th Primer Apellido
+                    th Segundo Apellido
+                    th Nombre de usuario
+                    th Foto de perfil 
+                    th Formato foto 
+                    th Teléfono 
+                    th correo
+                    th contraseña 
+                    th País
+                    th Direccion
+                    th Codigo Postal
+                    th Sexo
+                    th rol
+                    th Acciones 
+                  body
+                    -for(var i=0; i< newsRows.length; i++)
+                      -var datos = newsRows[i];
+                      tr 
+                        each row  in datos
+                          td= row
+                        td.td-actions.text-right
+                          //- button.btn.btn-info.animation-on-hover.btn-sm(type="submit" form="formUpdate")
+                            i.tim-icons.icon-pencil 
+                          a.btn.btn-info.animation-on-hover.btn-sm(href="/update/"+datos.primerNombre title="editar")
+                            i.tim-icons.icon-pencil 
+                          a.btn.btn-danger.animation-on-hover.btn-sm(href="/delete/"+newsRows[i].documento, title="Eliminar") 
+                            i.tim-icons.icon-simple-remove
+
+    

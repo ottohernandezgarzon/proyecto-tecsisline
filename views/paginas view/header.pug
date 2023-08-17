@@ -1,0 +1,44 @@
+extends layouts
+block header
+  header#header.z-depth-3.row
+    .encabezado.col.l7.m7.row
+      h4.col Tecsisline 
+      .menuBtn.col
+        a#IniciarSesion.btn.waves-effect.waves-green.white.black-text( href="/login") Iniciar Sesion 
+        a#Registrarse.btn.waves-effect.waves-green.white.black-text(href="/registrarse") Registrarse
+    .col.l2.right
+      .perfil.right
+        img.fotoPerfil(src="/img/icons/perfil.png", alt="Foto de perfil")
+        a.nombre-perfil.btn.btn-small.btn-flat.dropdown-trigger(data-target="subMenuPerfil") Nombre usuario
+        ul#subMenuPerfil.dropdown-content
+          each listPerfil in ["Perfil","configuración","Administracion","Cerrar",]
+            li 
+              a(href=listPerfil)=listPerfil
+        .perfilIconsRedesSociales
+          img.icon.facebook.tiny(src="/img/icons/facebook-logo.png", alt="facebook-logo")
+          img.icon.twitter(src="/img/icons/twitter-logo.png", alt="twitter-logo")
+          img.icon.whatsapp(src="/img/icons/whatsapp-logo.png", alt="whatsapp-logo")  
+    .col.l7.m7
+      nav#menu.grey.lighten-2
+        ul
+          li.inicio
+            a(href="/inicio").black-text Inicio
+          li 
+            a.dropdown-trigger(data-target="subMenuProducto") Productos
+            ul#subMenuProducto.dropdown-content
+              for list in ["productos","Inventario"]
+                li
+                  a(href=list)=list
+          li 
+            a(href="/soporte") Soporte
+          li
+            a(href="/contactos") Contactos
+          li 
+            //i#r.material-icons shopping_cart
+            a(href="/pago") Compras
+          
+    .col.l2.m2
+      .search.input-field.center-align
+        i.material-icons search
+        input#search.col.l6.m5(type="search", name="buscar" placeholder="Buscar")
+  block contenido
