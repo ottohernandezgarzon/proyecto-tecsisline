@@ -1,3 +1,7 @@
 language: node_js
-node_js: "node"
-before_install: cd Proyecto/3-Desarrollo/Website/  
+node_js: 
+
+  - 12.18.3
+before_script:
+  - npm install -g nodemon
+script: npm run start
