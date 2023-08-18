@@ -1,0 +1,301 @@
+extends /layout.pug
+block content
+  .content
+    .row
+      .col-12
+        .card.card-chart
+          .card-header
+            .row
+              .col-sm-6.text-left
+                h5.card-category Total Shipments
+                h2.card-title Performance
+              .col-sm-6
+                .btn-group.btn-group-toggle.float-right(data-toggle='buttons')
+                  label.btn.btn-sm.btn-primary.btn-simple.active#0
+                    input(type='radio' name='options' checked)
+                    span.d-none.d-sm-block.d-md-block.d-lg-block.d-xl-block Accounts
+                    span.d-block.d-sm-none
+                      i.tim-icons.icon-single-02
+                  label.btn.btn-sm.btn-primary.btn-simple#1
+                    input.d-none.d-sm-none(type='radio' name='options')
+                    span.d-none.d-sm-block.d-md-block.d-lg-block.d-xl-block Purchases
+                    span.d-block.d-sm-none
+                      i.tim-icons.icon-gift-2
+                  label.btn.btn-sm.btn-primary.btn-simple#2
+                    input.d-none(type='radio' name='options')
+                    span.d-none.d-sm-block.d-md-block.d-lg-block.d-xl-block Sessions
+                    span.d-block.d-sm-none
+                      i.tim-icons.icon-tap-02
+          .card-body
+            .chart-area
+              canvas#chartBig1
+    .row
+      .col-lg-4
+        .card.card-chart
+          .card-header
+            h5.card-category Total Shipments
+            h3.card-title
+              i.tim-icons.icon-bell-55.text-primary
+              |  763,215
+          .card-body
+            .chart-area
+              canvas#chartLinePurple
+      .col-lg-4
+        .card.card-chart
+          .card-header
+            h5.card-category Daily Sales
+            h3.card-title
+              i.tim-icons.icon-delivery-fast.text-info
+              |  3,500€
+          .card-body
+            .chart-area
+              canvas#CountryChart
+      .col-lg-4
+        .card.card-chart
+          .card-header
+            h5.card-category Completed Tasks
+            h3.card-title
+              i.tim-icons.icon-send.text-success
+              |  12,100K
+          .card-body
+            .chart-area
+              canvas#chartLineGreen
+    .row
+      .col-lg-6.col-md-12
+        .card.card-tasks
+          .card-header
+            h6.title.d-inline Tasks(5)
+            p.card-category.d-inline today
+            .dropdown
+              button.btn.btn-link.dropdown-toggle.btn-icon(type='button' data-toggle='dropdown')
+                i.tim-icons.icon-settings-gear-63
+              .dropdown-menu.dropdown-menu-right(aria-labelledby='dropdownMenuLink')
+                a.dropdown-item(href='#pablo') Action
+                a.dropdown-item(href='#pablo') Another action
+                a.dropdown-item(href='#pablo') Something else
+          .card-body
+            .table-full-width.table-responsive
+              table.table
+                tbody
+                  tr
+                    td
+                      .form-check
+                        label.form-check-label
+                          input.form-check-input(type='checkbox')
+                          span.form-check-sign
+                            span.check
+                    td
+                      p.title Update the Documentation
+                      p.text-muted Dwuamish Head, Seattle, WA 8:47 AM
+                    td.td-actions.text-right
+                      button.btn.btn-link(type='button' rel='tooltip' data-original-title='Edit Task')
+                        i.tim-icons.icon-pencil
+                  tr
+                    td
+                      .form-check
+                        label.form-check-label
+                          input.form-check-input(type='checkbox' checked)
+                          span.form-check-sign
+                            span.check
+                    td
+                      p.title GDPR Compliance
+                      p.text-muted The GDPR is a regulation that requires businesses to protect the personal data and privacy of Europe citizens for transactions that occur within EU member states.
+                    td.td-actions.text-right
+                      button.btn.btn-link(type='button' rel='tooltip' data-original-title='Edit Task')
+                        i.tim-icons.icon-pencil
+                  tr
+                    td
+                      .form-check
+                        label.form-check-label
+                          input.form-check-input(type='checkbox')
+                          span.form-check-sign
+                            span.check
+                    td
+                      p.title Solve the issues
+                      p.text-muted Fifty percent of all respondents said they would be more likely to shop at a company
+                    td.td-actions.text-right
+                      button.btn.btn-link(type='button' rel='tooltip' data-original-title='Edit Task')
+                        i.tim-icons.icon-pencil
+                  tr
+                    td
+                      .form-check
+                        label.form-check-label
+                          input.form-check-input(type='checkbox')
+                          span.form-check-sign
+                            span.check
+                    td
+                      p.title Release v2.0.0
+                      p.text-muted Ra Ave SW, Seattle, WA 98116, SUA 11:19 AM
+                    td.td-actions.text-right
+                      button.btn.btn-link(type='button' rel='tooltip' data-original-title='Edit Task')
+                        i.tim-icons.icon-pencil
+                  tr
+                    td
+                      .form-check
+                        label.form-check-label
+                          input.form-check-input(type='checkbox')
+                          span.form-check-sign
+                            span.check
+                    td
+                      p.title Export the processed files
+                      p.text-muted The report also shows that consumers will not easily forgive a company once a breach exposing their personal data occurs.
+                    td.td-actions.text-right
+                      button.btn.btn-link(type='button' rel='tooltip' data-original-title='Edit Task')
+                        i.tim-icons.icon-pencil
+                  tr
+                    td
+                      .form-check
+                        label.form-check-label
+                          input.form-check-input(type='checkbox')
+                          span.form-check-sign
+                            span.check
+                    td
+                      p.title Arival at export process
+                      p.text-muted Capitol Hill, Seattle, WA 12:34 AM
+                    td.td-actions.text-right
+                      button.btn.btn-link(type='button' rel='tooltip' data-original-title='Edit Task')
+                        i.tim-icons.icon-pencil
+      .col-lg-6.col-md-12
+        .card
+          .card-header
+            h4.card-title Simple Table
+          .card-body
+            .table-responsive
+              table.table.tablesorter
+                thead.text-primary
+                  tr
+                    th.
+
+                      Name
+
+                    th.
+
+                      Country
+
+                    th.
+
+                      City
+
+                    th.text-center.
+
+                      Salary
+
+                tbody
+                  tr
+                    td.
+
+                      Dakota Rice
+
+                    td.
+
+                      Niger
+
+                    td.
+
+                      Oud-Turnhout
+
+                    td.text-center.
+
+                      $36,738
+
+                  tr
+                    td.
+
+                      Minerva Hooper
+
+                    td.
+
+                      Curaçao
+
+                    td.
+
+                      Sinaai-Waas
+
+                    td.text-center.
+
+                      $23,789
+
+                  tr
+                    td.
+
+                      Sage Rodriguez
+
+                    td.
+
+                      Netherlands
+
+                    td.
+
+                      Baileux
+
+                    td.text-center.
+
+                      $56,142
+
+                  tr
+                    td.
+
+                      Philip Chaney
+
+                    td.
+
+                      Korea, South
+
+                    td.
+
+                      Overland Park
+
+                    td.text-center.
+
+                      $38,735
+
+                  tr
+                    td.
+
+                      Doris Greene
+
+                    td.
+
+                      Malawi
+
+                    td.
+
+                      Feldkirchen in Kärnten
+
+                    td.text-center.
+
+                      $63,542
+
+                  tr
+                    td.
+
+                      Mason Porter
+
+                    td.
+
+                      Chile
+
+                    td.
+
+                      Gloucester
+
+                    td.text-center.
+
+                      $78,615
+
+                  tr
+                    td.
+
+                      Jon Porter
+
+                    td.
+
+                      Portugal
+
+                    td.
+
+                      Gloucester
+
+                    td.text-center.
+
+                      $98,615

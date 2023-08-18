@@ -1,0 +1,27 @@
+{
+  "name": "tecsisline",
+  "version": "0.0.1",
+  "description": "Proyecto de sena  con tema de tienda virtual ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev-nodemon": "nodemon index.js -i public\\js\\ -e js,json  ",
+    "test": "node --test"
+  },
+  "authors": "Otoniel Hernández Garzón, Anderson Steven Yaguma Dias, Jhostin David Cespedes Campo",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "multer": "^1.4.3",
+    "mysql2": "^2.3.3",
+    "path": "^0.12.7",
+    "pug": "^2.0.4",
+    "sequelize": "^6.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "sequelize-cli": "^6.5.2"
+  }
+}
