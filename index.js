@@ -10,7 +10,7 @@ const express = require("express"),
 
 const conectar = new Conectar().conectar().sequelize;
 
-const port = 80 || 8080 || 3000 || process.env.PORT;
+const port =  3000 || 8080||80|| process.env.PORT;
 
 // configuración de los recursos o paquetes
 app

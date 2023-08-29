@@ -46,11 +46,11 @@ class RegistrarseController extends Usuario {
       nombreUsuario = req.body.primerNombre + " " + req.body.primerApellido;
       correo = req.body.email;
       contraseña = req.body.password;
-      tel = req.body.telephone;
+      tel = req.body.telephone == "" ? null : req.body.telephone;
       pais = req.body.country;
       direccion = req.body.direction;
-      codigoPostal = req.body.codigoPostal;
-      sexoId = req.body.sexo;
+      codigoPostal = req.body.codigoPostal == "" ? null : req.body.codigoPostal;
+      sexoId = !req.body.sexo >= 0 ? 4 : req.body.sexo;
       rolesId = 3;
       this.createInsert(
         documento,
@@ -76,8 +76,8 @@ class RegistrarseController extends Usuario {
           res.redirect("/tables");
         })
         .catch((er) => {
-          console.error(`Error al registrar \n${er}`);
-          res.send("error al insertar");
+          console.error(`Error al registrar \n${er.message}`);
+          res.send(`error al insertar Database: ${er.message}`);
         });
     };
 
@@ -92,7 +92,7 @@ class RegistrarseController extends Usuario {
           res.send(datos);
         })
         .catch((er) => {
-          console.error(er);
+          console.error(er.message);
         });
     };
 

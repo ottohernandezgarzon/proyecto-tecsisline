@@ -38,7 +38,8 @@ insert into sexos (sexo_id,sexo,createdAt,updatedAt)
 values
 (1,"Masculino",now(),now()),
 (2,"Femenino",now(),now()),
-(3,"Otro",now(),now());
+(3,"Otro",now(),now()),
+(4,"Indefinido",now(),now());
 
 create table usuarios(
 no_documento int (20) not null,
