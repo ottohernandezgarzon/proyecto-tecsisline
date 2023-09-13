@@ -5,7 +5,7 @@ block contenido
   main#registrase.container
     .card.z-depth-3
       //- form.card-content#form-registrar(action="/registrarse", method="POST", enctype="multipart/form-data" )
-      form.card-content#form-registrar(action="/registrar", method="POST")
+      form.card-content#formRegistrar(action="/registrar", method="POST")
         fieldset.row.container
           .input-field.col.s5
             input.validate#primerNombre(type="text" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü]+$" name="primerNombre" required)
@@ -24,7 +24,7 @@ block contenido
             label(for="segundoApellido") Segundo Apellido
             span.helper-text(data-error="El campo obligatorio esta vació", data-success="Dato Valido")
           .input-field.col.s5
-            select#tipoDocumento(name="tipoDocumento"  )
+            select#tipoDocumento.validate(name="tipoDocumento" required )
               option(value="" selected,disabled) Seleccione
               option(value="1") Cédula de ciudadanía
               option(value="2") Cédula extranjera
@@ -61,7 +61,7 @@ block contenido
             input#direction(type="text", name="direction")
             label(for="direction") Dirección
           .input-field.col.s4
-            select#sexo.validate(name="sexo")
+            select#sexo(name="sexo")
               option(value="4", selected,disabled) Seleccione
               option(value="1") Masculino
               option(value="2") Femenino
@@ -74,5 +74,5 @@ block contenido
             input#country(type="text", name="country")
             label(for="country", ) País
       .card-action.container
-        button.btn.waves-effect.waves-green.green.accent-4(type="submit",form="form-registrar" ) Crear cuenta
+        button.btn.waves-effect.waves-green.green.accent-4(type="submit",form="form-registrar" disabled) Crear cuenta
           i.material-icons.left check_box

@@ -32,5 +32,8 @@
 "workbench.colorCustomizations": {
 
   "tab.activeBorderTop": "#0080ff",
-}
+},
+"conventionalCommits.scopes": [
+  "TaskProject"
+]
 }

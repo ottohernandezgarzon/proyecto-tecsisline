@@ -54,7 +54,7 @@ class RegistrarseController extends Usuario {
       rolesId = 3;
       this.createInsert(
         documento,
-        primerNombre,
+        primerNombre, 
         segundoNombre,
         primerApellido,
         segundoApellido,
@@ -77,8 +77,12 @@ class RegistrarseController extends Usuario {
         })
         .catch((er) => {
           console.error(`Error al registrar \n${er.message}`);
+          if( er.message=="Validation error" ) {
+            // req.render("paginas view/login/registrar", { pretty: true, validationError:"El numero de documento ya esta registrado" })
+            console.error("El numero de documento ya esta registrado");
+          }
           res.send(`error al insertar Database: ${er.message}`);
-        });
+        })
     };
 
     return create;
