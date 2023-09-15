@@ -1,7 +1,8 @@
 const d = document;
 
 export default function valid() {
-  const $form = d.forms.formRegistrar;
+  // const $form = d.forms.formRegistrar;
+  const $form = d.getElementById("formRegistrar");
 
   if ($form) {
     d.addEventListener("keyup", (e) => {
@@ -10,7 +11,7 @@ export default function valid() {
         dataValid = $input.nextElementSibling.nextElementSibling.dataset,
         data_error = "El campo obligatorio esta vació";
       const $pattern = new RegExp(pattern);
-      if ($input.value == "") {
+      if ($input.value === "" && $input.required === true) {
         d.getElementById($input.name).classList.add("invalid") +
           (dataValid.error = data_error);
       } else if (pattern && $input.value !== "") {
