@@ -1,15 +1,16 @@
-const { sequelize, Sequelize } = require("sequelize");
+const { sequelize, Sequelize } = require("sequelize"),
+  data = require('./Database/configConnection.json');
 class Conectar {
-  #hosts = "localhost";
-  #user = "root";
-  #password = "metallica21";
-  #db = "tecsisline";
-  #dialect = "mysql";
+  #hosts = data.HOST;
+  #user = data.USER;
+  #password = (!null) ?"":data.PASSWORD;
+  #db = data.DB;
+  #dialect = data.dialect;
   #pool = {
-    max: 5,
-    min: 0,
-    acquire: 30000,
-    idle: 10000,
+    max: data.pool.max,
+    min: data.pool,
+    acquire: data.pool.acquire,
+    idle: data.pool.idle,
   };
   conectar() {
     const sequelize = new Sequelize(this.#db, this.#user, this.#password, {

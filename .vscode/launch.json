@@ -12,24 +12,13 @@
       "webRoot": "${workspaceFolder}"
     },
     {
-      "name": "Launch Edge",
-      "request": "launch",
-      "type": "pwa-msedge",
-      "url": "http://localhost/dashboard",
-      "webRoot": "${workspaceFolder}"
-    },
-    {
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen",
-      "name": "nodemon",
-      "program": "${workspaceFolder}/app.js",
-      "request": "launch",
-      "restart": true,
-      "runtimeExecutable": "nodemon",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "type": "pwa-node"
-    },
+      "type": "vscode-edge-devtools.debug",
+      "name": "Open Edge DevTools",
+      "request": "attach",
+      "url": "http://localhost:3000/registrarse", // Provide your project's url to finish configuring
+      "presentation": {
+        "hidden": true
+      }
+    }
   ]
 }

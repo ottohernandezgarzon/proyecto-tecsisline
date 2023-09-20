@@ -28,4 +28,12 @@
       "connectString": "root@localhost:3306"
     }
   ],
+  "checkpoints.showActiveFileOnly": true,
+"workbench.colorCustomizations": {
+
+  "tab.activeBorderTop": "#0080ff",
+},
+"conventionalCommits.scopes": [
+  "TaskProject"
+]
 }

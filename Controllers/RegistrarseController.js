@@ -46,11 +46,11 @@ class RegistrarseController extends Usuario {
       nombreUsuario = req.body.primerNombre + " " + req.body.primerApellido;
       correo = req.body.email;
       contraseña = req.body.password;
-      tel = req.body.telephone;
+      tel = req.body.telephone == "" ? null : req.body.telephone;
       pais = req.body.country;
       direccion = req.body.direction;
-      codigoPostal = req.body.codigoPostal;
-      sexoId = req.body.sexo;
+      codigoPostal = req.body.codigoPostal == "" ? null : req.body.codigoPostal;
+      sexoId = !req.body.sexo >= 0 ? 4 : req.body.sexo;
       rolesId = 3;
       this.createInsert(
         documento,
@@ -76,9 +76,23 @@ class RegistrarseController extends Usuario {
           res.redirect("/tables");
         })
         .catch((er) => {
-          console.error(`Error al registrar \n${er}`);
-          res.send("error al insertar");
-        });
+          // console.error(`Error al registrar \n${er.message}`);
+          console.error(`${er.message}: - ` + er.original.sqlMessage);
+          if (er.message == "Validation error") {
+            const message = {}
+            let message_error
+            er.errors.forEach(element => { element.path; message_error = element.path })
+            if (message_error == "PRIMARY") {
+              message.data = "El numero de documento";
+            }
+            if (message_error == "correo") {
+              message.data = "El correo electrónico";
+            }
+            res.render("paginas view/login/registrar", { pretty: true, validationError: `${message.data} ya esta registrado` })
+            console.error(` ${message.data} ya esta registrado`);
+          }
+          // res.send(`error al insertar Database: ${er.message}`);
+        })
     };
 
     return create;
@@ -92,7 +106,7 @@ class RegistrarseController extends Usuario {
           res.send(datos);
         })
         .catch((er) => {
-          console.error(er);
+          console.error(er.message);
         });
     };
 

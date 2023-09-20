@@ -1,6 +1,6 @@
 {
   "recommendations": [
     "mkaufman.ejshint",
-    "mkaufman.ejsHint"
+    "formulahendry.github-actions"
   ]
 }

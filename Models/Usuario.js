@@ -197,10 +197,10 @@ class Usuario extends Conectar {
         "nombre_usuario",
         "foto_perfil",
         "formato_foto",
-        "telefono",
         "correo",
         "pais",
         "contraseña",
+        "telefono",
       ],
       include: [
         {
