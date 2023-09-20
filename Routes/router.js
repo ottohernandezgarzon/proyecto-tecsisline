@@ -30,7 +30,7 @@ routerPaths
   .get("/dashboard", Dashboard.read())
 
   .get("/read", Registrarse.read())
-  .post("/registrar", Registrarse.create())
+  .post("/registrarse", Registrarse.create())
 
   .get("/tables", Dashboard.read())
   .post("/update/:primerNombre", Dashboard.update())

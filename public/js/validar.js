@@ -102,4 +102,13 @@ export default function valid() {
       $btn.removeAttribute("disabled");
     }
   });
+
+  if (d.querySelectorAll("input[type=hidden]") && d.querySelector("input[type=hidden]").value !== "") return val()
+  function val() {
+    const VALIDAR = d.getElementById("error").value
+    M.toast({
+      html: VALIDAR,
+      classes: "red",
+    });
+  }
 } 

@@ -5,7 +5,8 @@ block contenido
   main#registrase.container
     .card.z-depth-3
       //- form.card-content#form-registrar(action="/registrarse", method="POST", enctype="multipart/form-data" )
-      form.card-content#formRegistrar(action="/registrar", method="POST")
+      input( id="error" type="hidden", name="error" value=validationError )
+      form.card-content#formRegistrar(action="/registrarse", method="POST")
         fieldset.row.container
           .input-field.col.s5
             input.validate#primerNombre(type="text" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü]+$" name="primerNombre" required)

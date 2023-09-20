@@ -54,7 +54,7 @@ class RegistrarseController extends Usuario {
       rolesId = 3;
       this.createInsert(
         documento,
-        primerNombre, 
+        primerNombre,
         segundoNombre,
         primerApellido,
         segundoApellido,
@@ -76,12 +76,22 @@ class RegistrarseController extends Usuario {
           res.redirect("/tables");
         })
         .catch((er) => {
-          console.error(`Error al registrar \n${er.message}`);
-          if( er.message=="Validation error" ) {
-            // req.render("paginas view/login/registrar", { pretty: true, validationError:"El numero de documento ya esta registrado" })
-            console.error("El numero de documento ya esta registrado");
+          // console.error(`Error al registrar \n${er.message}`);
+          console.error(`${er.message}: - ` + er.original.sqlMessage);
+          if (er.message == "Validation error") {
+            const message = {}
+            let message_error
+            er.errors.forEach(element => { element.path; message_error = element.path })
+            if (message_error == "PRIMARY") {
+              message.data = "El numero de documento";
+            }
+            if (message_error == "correo") {
+              message.data = "El correo electrónico";
+            }
+            res.render("paginas view/login/registrar", { pretty: true, validationError: `${message.data} ya esta registrado` })
+            console.error(` ${message.data} ya esta registrado`);
           }
-          res.send(`error al insertar Database: ${er.message}`);
+          // res.send(`error al insertar Database: ${er.message}`);
         })
     };
 
