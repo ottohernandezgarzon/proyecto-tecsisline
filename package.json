@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev-nodemon": "nodemon index.js -i public\\js\\ -e js,json  ",
-    "test": "node --test"
+    "test": "node --test",
+    "console": "console-ninja npx nodemon *.js"
   },
   "authors": "Otoniel Hernández Garzón, Anderson Steven Yaguma Dias, Jhostin David Cespedes Campo",
   "license": "MIT",

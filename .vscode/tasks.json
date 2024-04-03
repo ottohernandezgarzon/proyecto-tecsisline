@@ -1,12 +1,19 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "npm",
-			"script": "dev-nodemon",
-			"problemMatcher": [],
-			"label": "npm: dev-nodemon",
-			"detail": "nodemon index.js -i public\\js\\ -e js,json  "
-		}
-	]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "dev-nodemon",
+      "problemMatcher": [],
+      "label": "npm: dev-nodemon",
+      "detail": "nodemon index.js -i public\\js\\ -e js,json  "
+    },
+    {
+      "type": "npm",
+      "script": "console",
+      "problemMatcher": [],
+      "label": "npm: console",
+      "detail": "console-ninja npx nodemon index.js"
+    }
+  ]
 }
