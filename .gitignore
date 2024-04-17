@@ -117,3 +117,6 @@ dist
 test/
 # visual studio code
 .vscode/
+# Dependency graph
+.dependencygraph/
+index.md

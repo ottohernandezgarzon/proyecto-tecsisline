@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "mkaufman.ejshint",
-    "formulahendry.github-actions"
+    "formulahendry.github-actions",
+    "exodiusstudios.comment-anchors"
   ]
 }
