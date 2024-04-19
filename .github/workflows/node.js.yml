@@ -5,18 +5,18 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ "testingSQL" ]
+    branches: [ "testingSQL","Tareas" ]
   pull_request:
     branches: [ "testingSQL" ]
 
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [20.X --lts="lts/iron"]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -26,6 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - run: npm up && npm up -D
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
