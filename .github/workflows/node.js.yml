@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [20.X --lts="lts/iron"]
+        node-version: [20.X]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
