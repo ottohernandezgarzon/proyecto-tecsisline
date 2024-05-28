@@ -49,6 +49,14 @@
   "workbench.colorCustomizations": {
     "tab.activeBorderTop": "#0080ff"
   },
-  "conventionalCommits.scopes": ["TaskProject", "fontsStyle", "UpdatePackage"],
-  "vscode-bard.cookies": "SEARCH_SAMESITE=CgQIj5kB; _ga=GA1.1.2005442654.1693540103; AEC=Ad49MVF6uNY_EZdqKh-rDO7dVUTUsm7KuTCCT0LtFtb47tI7GV2S_CEndw; S=billing-ui-v3=odUzf1_O9z3PsHuEMpilFgyvRh1qc7n0:billing-ui-v3-efe=odUzf1_O9z3PsHuEMpilFgyvRh1qc7n0; SID=awie9LFaNWYhqg7w8cpBjCj2fNnSbsSfqujiD4nc5lFcTCJr8EuET4wBR2hBQfnaBW4zwA.; __Secure-1PSID=awie9LFaNWYhqg7w8cpBjCj2fNnSbsSfqujiD4nc5lFcTCJr7ymLEUodgC7Uek4ZcJE9MA.; __Secure-3PSID=awie9LFaNWYhqg7w8cpBjCj2fNnSbsSfqujiD4nc5lFcTCJrg3ghdcumAWvqQYP-OA0qtQ.; HSID=A41JdrDIYzFftCa4g; SSID=Aw9FGXF7gv7stXlg3; APISID=GJoamB1Bd3geX8pV/AF3-V-B5AGRBYsfnS; SAPISID=iZWsXEnHXEX2yzTM/Ag1Ojuk91SXzX9gFH; __Secure-1PAPISID=iZWsXEnHXEX2yzTM/Ag1Ojuk91SXzX9gFH; __Secure-3PAPISID=iZWsXEnHXEX2yzTM/Ag1Ojuk91SXzX9gFH; _ga_WC57KJ50ZZ=GS1.1.1694709344.8.1.1694725581.0.0.0; 1P_JAR=2023-09-14-22; NID=511=CVHKY56WjgNXdg18RJA0gfJZeMeufJrKfqr2L3LgPGKZHGvwtb9QW55a1uGKdjOQUG134rBynuOvcwVzlcFwqBmtuNLCdVPP_0p8LGHAeviiM0A-mZroCGuaWb5_MaTM2jtUKv-U5qr0UteaiEFcra5J2nDbohora0zzD4cNeKUNrFq69dsPGTf9tl_Nc-v1z2WNsMAZ4CEOV-HtNKhnzedjiIAWcWCJc2Bk9-ourBAyoxhOe1fGhKXZL2yfyJFQxmnbEzMK75u3L8m7YoaJeC94q7MV0Q7Dj7_dhvl0aGREqbT0r46E_TizJ28Sp1tV4O49a8WR_q7ilFTBXU73-SFgsL9sNxzrBdBscZY6pJIW79Db; __Secure-1PSIDTS=sidts-CjEBSAxbGe-CBvu6fei7RqfjNZYL1LZe7MIIxzJ9E07ld35v_tgvx8AmiePnecn93sf7EAA; __Secure-3PSIDTS=sidts-CjEBSAxbGe-CBvu6fei7RqfjNZYL1LZe7MIIxzJ9E07ld35v_tgvx8AmiePnecn93sf7EAA; SIDCC=APoG2W8xadndZJN-Ls7WoFJb8y62r-H3IYKq2NAi2oT57xZ2eiX8H3rw8Ws5V8aoLIz42fQH1xE; __Secure-1PSIDCC=APoG2W8lSCcgIds-EHR2J07Ex9q9wZhHLqZg0tond2mZ0aWT_rAB9anii2py82hPUwJs13LWCA; __Secure-3PSIDCC=APoG2W89vXtEy-u6G7wS6U_8YWLTnZgh59Xqq_4N3C9-qzDSP6KcmglnE53jllFJx6XTOtrgBMT3"
+  "conventionalCommits.scopes": [
+    "TaskProject",
+    "fontsStyle",
+    "UpdatePackage",
+    "RefactorProject",
+    "UpdateSQL",
+    "UpdateProyect"
+  ],
+  "prettier.semi": false,
+  "prettier.arrowParens": "avoid"
 }

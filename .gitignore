@@ -120,3 +120,4 @@ test/
 # Dependency graph
 .dependencygraph/
 index.md
+package-lock.json
