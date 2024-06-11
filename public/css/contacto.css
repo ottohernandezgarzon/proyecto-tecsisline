@@ -1,3 +1,7 @@
 #contentContactos{
   padding: 1.5rem 0;
+  h4 {
+    font-size: 3.2vw;
+    margin: 2rem,0;
+  }
 }
