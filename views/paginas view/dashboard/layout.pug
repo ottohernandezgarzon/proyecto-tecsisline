@@ -1,5 +1,4 @@
 //
-
   //- =========================================================
   //- * * Black Dashboard - v1.0.1
   //- =========================================================
@@ -16,37 +15,47 @@
   //- 
 doctype html 
 html(lang="es")
-  head 
+  head
     meta(charset="utf-8")
-    meta(name="viewport", content="width=device-width,initial-scale=1,shrink-to-fit=no")
-    link(rel="apple-touch-icon", sizes="76x76", href="assets/img/apple-icon.png")
+    meta(
+      name="viewport",
+      content="width=device-width,initial-scale=1,shrink-to-fit=no"
+    )
+    link(
+      rel="apple-touch-icon",
+      sizes="76x76",
+      href="assets/img/apple-icon.png"
+    )
     //- link(rel="icon", type="image/png", href="assets/img/favicon.png")
     title administrador
 
     //      Fonts and icons     
-    link(href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800", rel="stylesheet")
-    link(href="https://use.fontawesome.com/releases/v5.0.6/css/all.css", rel="stylesheet")
+    link(
+      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800",
+      rel="stylesheet"
+    )
+    link(
+      href="https://use.fontawesome.com/releases/v5.0.6/css/all.css",
+      rel="stylesheet"
+    )
     //  Nucleo Icons 
     link(href="assets/css/nucleo-icons.css", rel="stylesheet")
     //  CSS Files 
     link(href="assets/css/black-dashboard.css?v=1.0.0", rel="stylesheet")
     link(href="../assets/css/black-dashboard.css?v=1.0.0", rel="stylesheet")
-    
-  body 
+
+  body
     .wrapper
       .sidebar(data="blue")
         //
-
           Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red"
 
         .sidebar-wrapper
           .logo
             a.simple-text.logo-mini(href="javascript:void(0)").
-
               CT
 
             a.simple-text.logo-normal(href="javascript:void(0)").
-
               Creative Tim
 
           ul.nav
@@ -72,23 +81,34 @@ html(lang="es")
                   span.navbar-toggler-bar.bar1
                   span.navbar-toggler-bar.bar2
                   span.navbar-toggler-bar.bar3
-              a.navbar-brand(href="javascript:void(0)")=title
-            button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navigation", aria-expanded="false", aria-label="Toggle navigation")
+              a.navbar-brand(href="javascript:void(0)")= title
+            button.navbar-toggler(
+              type="button",
+              data-toggle="collapse",
+              data-target="#navigation",
+              aria-expanded="false",
+              aria-label="Toggle navigation"
+            )
               span.navbar-toggler-bar.navbar-kebab
               span.navbar-toggler-bar.navbar-kebab
               span.navbar-toggler-bar.navbar-kebab
-            .collapse.navbar-collapse#navigation
+            #navigation.collapse.navbar-collapse
               ul.navbar-nav.ml-auto
                 li.search-bar.input-group
-                  button.btn.btn-link#search-button(data-toggle="modal", data-target="#searchModal")
+                  button#search-button.btn.btn-link(
+                    data-toggle="modal",
+                    data-target="#searchModal"
+                  )
                     i.tim-icons.icon-zoom-split
                     span.d-lg-none.d-md-block Search
                 li.dropdown.nav-item
-                  a.dropdown-toggle.nav-link(href="javascript:void(0)", data-toggle="dropdown")
+                  a.dropdown-toggle.nav-link(
+                    href="javascript:void(0)",
+                    data-toggle="dropdown"
+                  )
                     .notification.d-none.d-lg-block.d-xl-block
                     i.tim-icons.icon-sound-wave
                     p.d-lg-none.
-
                       Notifications
 
                   ul.dropdown-menu.dropdown-menu-right.dropdown-navbar
@@ -108,7 +128,6 @@ html(lang="es")
                       img(src="assets/img/anime3.png", alt="Profile Photo")
                     b.caret.d-none.d-lg-block.d-xl-block
                     p.d-lg-none.
-
                       Log out
 
                   ul.dropdown-menu.dropdown-navbar
@@ -120,49 +139,58 @@ html(lang="es")
                     li.nav-link
                       a.nav-item.dropdown-item(href="javascript:void(0)") Log out
                 li.separator.d-lg-none
-        .modal.modal-search.fade#searchModal(tabindex="-1", role="dialog", aria-labelledby="searchModal", aria-hidden="true")
+        #searchModal.modal.modal-search.fade(
+          tabindex="-1",
+          role="dialog",
+          aria-labelledby="searchModal",
+          aria-hidden="true"
+        )
           .modal-dialog(role="document")
             .modal-content
               .modal-header
-                input.form-control#inlineFormInputGroup(type="text", placeholder="SEARCH")
-                button.close(type="button", data-dismiss="modal", aria-label="Close")
+                input#inlineFormInputGroup.form-control(
+                  type="text",
+                  placeholder="SEARCH"
+                )
+                button.close(
+                  type="button",
+                  data-dismiss="modal",
+                  aria-label="Close"
+                )
                   i.tim-icons.icon-simple-remove
         //  End Navbar 
           //- inicio contenido de vista 
-        block contenido 
+        block contenido
           //- fin contenido de vista
         footer.footer
           .container-fluid
             ul.nav
               li.nav-item
                 a.nav-link(href="javascript:void(0)").
-
                   Creative Tim
 
               li.nav-item
                 a.nav-link(href="javascript:void(0)").
-
                   About Us
 
               li.nav-item
                 a.nav-link(href="javascript:void(0)").
-
                   Blog
 
             .copyright
               | ©
 
               script.
+                document.write(new Date().getFullYear());
 
-                document.write(new Date().getFullYear())
-
-              | 2018 made with 
+              | 2018 made with
               i.tim-icons.icon-heart-2
-              |  by
+              |
+              | by
 
               a(href="javascript:void(0)", target="_blank") Creative Tim
-              |  for a better web.
-
+              |
+              | for a better web.
 
     //    Core JS Files   
     script(src="assets/js/core/jquery.min.js")
@@ -182,9 +210,8 @@ html(lang="es")
 
     script(src="https://cdn.trackjs.com/agent/v3/latest/t.js")
     script.
-
       window.TrackJS &&
         TrackJS.install({
           token: "ee6fab19c5a04ac1a32a645abde4613a",
-          application: "black-dashboard-free"
-        })
+          application: "black-dashboard-free",
+        });

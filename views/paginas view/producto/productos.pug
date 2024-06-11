@@ -1,10 +1,10 @@
 extends ../header
 block titleMenu
   title Productos
-block contenido 
+block contenido
   main#contentProductos
     .row
-      -for (var x = 0; x < 1; x++)
+      - for (var x = 0; x < 1; x++)
         .col.s3
           .card.z-depth-3
             .card-img
@@ -19,33 +19,33 @@ block contenido
             .button.card.action
               #Carrito.modal
                 .modal-content
-                   form.container(action="#", method="post")
+                  form.container(action="#", method="post")
                     .input-field.col.s5
-                      input.validate#Vivienda(type="text", name="")
+                      input#Vivienda.validate(type="text", name="")
                       label(for="Vivienda") Tipo de vivienda
                     .input-field.col.s6
-                      input.validate#DireccionDe(type="text", name="")
+                      input#DireccionDe.validate(type="text", name="")
                       label(for="DireccionDe") Direccion de vivienda
                     .input-field.col.s5
-                      input.validate#Pais(type="text", name="")
+                      input#Pais.validate(type="text", name="")
                       label(for="Pais") Pais
                     .input-field.col.s6
-                      input.validate#Ciudad(type="text", name="")
+                      input#Ciudad.validate(type="text", name="")
                       label(for="Ciudad") Ciudad
                     .input-field.col.s5
-                      input.validate#codigo(type="text" name="")
+                      input#codigo.validate(type="text", name="")
                       label(for="codigo") Codigo Postal
                     .input-field.col.s6
-                      input.validate#telefono(type="text" name="")
+                      input#telefono.validate(type="text", name="")
                       label(for="telefono") Telefono
                     .input-field.col.s11
-                      input.validate#Recibe(type="Text" name="")
+                      input#Recibe.validate(type="Text", name="")
                       label(for="Recibe") Nombre de quien recibe
-                      .modal-footer  
-                        a(href="#Enviar").waves-effect.waves-green.btn.green.accent-4.modal-trigger Enviar
+                      .modal-footer
+                        a.waves-effect.waves-green.btn.green.accent-4.modal-trigger(href="#Enviar") Enviar
                         #Enviar.modal
                           .modal-content
                             h4.center-align.green-text Gracias por tu compra :)
-                        a.modal-close.waves-effect.waves-green.btn.red.accent-4  Cerrar
-              a(href="#Carrito").waves-effect.waves-light.btn.green.accent-4.modal-trigger Comprar Producto
+                        a.modal-close.waves-effect.waves-green.btn.red.accent-4 Cerrar
+              a.waves-effect.waves-light.btn.green.accent-4.modal-trigger(href="#Carrito") Comprar Producto
                 i.material-icons shopping_cart

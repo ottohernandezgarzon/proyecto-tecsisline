@@ -10,53 +10,93 @@ block contenido
             .alert.alert-info
               span This is a plain notification
             .alert.alert-info
-              button.close(type='button' aria-hidden='true' data-dismiss='alert' aria-label='Close')
+              button.close(
+                type="button",
+                aria-hidden="true",
+                data-dismiss="alert",
+                aria-label="Close"
+              )
                 i.tim-icons.icon-simple-remove
               span This is a notification with close button.
-            .alert.alert-info.alert-with-icon(data-notify='container')
-              button.close(type='button' aria-hidden='true' data-dismiss='alert' aria-label='Close')
+            .alert.alert-info.alert-with-icon(data-notify="container")
+              button.close(
+                type="button",
+                aria-hidden="true",
+                data-dismiss="alert",
+                aria-label="Close"
+              )
                 i.tim-icons.icon-simple-remove
-              span.tim-icons.icon-bell-55(data-notify='icon')
-              span(data-notify='message') This is a notification with close button and icon.
-            .alert.alert-info.alert-with-icon(data-notify='container')
-              button.close(type='button' aria-hidden='true' data-dismiss='alert' aria-label='Close')
+              span.tim-icons.icon-bell-55(data-notify="icon")
+              span(data-notify="message") This is a notification with close button and icon.
+            .alert.alert-info.alert-with-icon(data-notify="container")
+              button.close(
+                type="button",
+                aria-hidden="true",
+                data-dismiss="alert",
+                aria-label="Close"
+              )
                 i.tim-icons.icon-simple-remove
-              span.tim-icons.icon-bell-55(data-notify='icon')
-              span(data-notify='message') This is a notification with close button and icon and have many lines. You can see that the icon and the close button are always vertically aligned. This is a beautiful notification. So you don't have to worry about the style.
+              span.tim-icons.icon-bell-55(data-notify="icon")
+              span(data-notify="message") This is a notification with close button and icon and have many lines. You can see that the icon and the close button are always vertically aligned. This is a beautiful notification. So you don't have to worry about the style.
       .col-md-6
         .card
           .card-header
             h4.card-title Notification states
           .card-body
             .alert.alert-primary
-              button.close(type='button' aria-hidden='true' data-dismiss='alert' aria-label='Close')
+              button.close(
+                type="button",
+                aria-hidden="true",
+                data-dismiss="alert",
+                aria-label="Close"
+              )
                 i.tim-icons.icon-simple-remove
               span
-                b Primary - 
+                b Primary -
                 | This is a regular notification made with ".alert-primary"
             .alert.alert-info
-              button.close(type='button' aria-hidden='true' data-dismiss='alert' aria-label='Close')
+              button.close(
+                type="button",
+                aria-hidden="true",
+                data-dismiss="alert",
+                aria-label="Close"
+              )
                 i.tim-icons.icon-simple-remove
               span
-                b Info - 
+                b Info -
                 | This is a regular notification made with ".alert-info"
             .alert.alert-success
-              button.close(type='button' aria-hidden='true' data-dismiss='alert' aria-label='Close')
+              button.close(
+                type="button",
+                aria-hidden="true",
+                data-dismiss="alert",
+                aria-label="Close"
+              )
                 i.tim-icons.icon-simple-remove
               span
-                b Success - 
+                b Success -
                 | This is a regular notification made with ".alert-success"
             .alert.alert-warning
-              button.close(type='button' aria-hidden='true' data-dismiss='alert' aria-label='Close')
+              button.close(
+                type="button",
+                aria-hidden="true",
+                data-dismiss="alert",
+                aria-label="Close"
+              )
                 i.tim-icons.icon-simple-remove
               span
-                b Warning - 
+                b Warning -
                 | This is a regular notification made with ".alert-warning"
             .alert.alert-danger
-              button.close(type='button' aria-hidden='true' data-dismiss='alert' aria-label='Close')
+              button.close(
+                type="button",
+                aria-hidden="true",
+                data-dismiss="alert",
+                aria-label="Close"
+              )
                 i.tim-icons.icon-simple-remove
               span
-                b Danger - 
+                b Danger -
                 | This is a regular notification made with ".alert-danger"
       .col-md-12
         .card
@@ -71,17 +111,29 @@ block contenido
                 .col-lg-8.ml-auto.mr-auto
                   .row
                     .col-md-4
-                      button.btn.btn-primary.btn-block(onclick='demo.showNotification(\'top\',\'left\')') Top Left
+                      button.btn.btn-primary.btn-block(
+                        onclick="demo.showNotification('top','left')"
+                      ) Top Left
                     .col-md-4
-                      button.btn.btn-primary.btn-block(onclick='demo.showNotification(\'top\',\'center\')') Top Center
+                      button.btn.btn-primary.btn-block(
+                        onclick="demo.showNotification('top','center')"
+                      ) Top Center
                     .col-md-4
-                      button.btn.btn-primary.btn-block(onclick='demo.showNotification(\'top\',\'right\')') Top Right
+                      button.btn.btn-primary.btn-block(
+                        onclick="demo.showNotification('top','right')"
+                      ) Top Right
               .row
                 .col-lg-8.ml-auto.mr-auto
                   .row
                     .col-md-4
-                      button.btn.btn-primary.btn-block(onclick='demo.showNotification(\'bottom\',\'left\')') Bottom Left
+                      button.btn.btn-primary.btn-block(
+                        onclick="demo.showNotification('bottom','left')"
+                      ) Bottom Left
                     .col-md-4
-                      button.btn.btn-primary.btn-block(onclick='demo.showNotification(\'bottom\',\'center\')') Bottom Center
+                      button.btn.btn-primary.btn-block(
+                        onclick="demo.showNotification('bottom','center')"
+                      ) Bottom Center
                     .col-md-4
-                      button.btn.btn-primary.btn-block(onclick='demo.showNotification(\'bottom\',\'right\')') Bottom Right
+                      button.btn.btn-primary.btn-block(
+                        onclick="demo.showNotification('bottom','right')"
+                      ) Bottom Right
