@@ -13,7 +13,11 @@
       "script": "console",
       "problemMatcher": [],
       "label": "npm: console",
-      "detail": "console-ninja npx nodemon index.js"
+      "detail": "console-ninja npx nodemon index.js",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     }
   ]
 }
