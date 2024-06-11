@@ -53,7 +53,8 @@
     "TaskProject",
     "fontsStyle",
     "UpdatePackage",
-    "front-end"
+    "front-end",
+    "ConfigProyect"
   ],
     "puglint.enable": true,
 "better-comments.tags": [
