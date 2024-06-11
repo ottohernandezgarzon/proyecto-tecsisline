@@ -120,3 +120,5 @@ test/
 # Dependency graph
 .dependencygraph/
 index.md
+.prettierrc
+package-lock.json
