@@ -121,3 +121,11 @@ test/
 .dependencygraph/
 index.md
 package-lock.json
+.anima/.gitignore
+.anima/components.json
+.anima/conventions.json
+.anima/enrichments.json
+.anima/workspace.json
+.prettierrc
+.vscode/settings.json
+.vscode/settings.json
