@@ -122,3 +122,5 @@ test/
 index.md
 package-lock.json
 .anima/*
+.prettierrc
+.vscode/*
