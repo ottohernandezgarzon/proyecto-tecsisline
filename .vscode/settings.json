@@ -55,10 +55,7 @@
     "UpdatePackage",
     "RefactorProject",
     "UpdateSQL",
-    "UpdateProyect",
-    "front-end",
-    "ConfigProyect",
-    "git ignore"
+    "UpdateProyect"
   ],
   "prettier.semi": false,
   "prettier.arrowParens": "avoid"
