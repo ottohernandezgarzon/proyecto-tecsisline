@@ -122,3 +122,8 @@ test/
 index.md
 .prettierrc
 package-lock.json
+.anima/.gitignore
+.anima/components.json
+.anima/conventions.json
+.anima/enrichments.json
+.anima/workspace.json
