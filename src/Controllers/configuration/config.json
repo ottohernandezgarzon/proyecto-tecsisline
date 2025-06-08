@@ -1,0 +1,11 @@
+{
+  "email": {
+    "host": "smtp.gmail.com",
+    "port": 25,
+    "secure": false,
+    "auth": {
+      "user": "ohernandezgarzon@gmail.com",
+      "pass": "rfqwxxyyotkhsbmg"
+    }
+  }
+}
