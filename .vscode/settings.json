@@ -55,7 +55,8 @@
     "UpdatePackage",
     "RefactorProject",
     "UpdateSQL",
-    "UpdateProyect"
+    "UpdateProyect",
+    "UpdateCI"
   ],
   "prettier.semi": false,
   "prettier.arrowParens": "avoid"
