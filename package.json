@@ -16,7 +16,7 @@
     "express": "^4.22.1",
     "express-session": "^1.18.2",
     "jsonwebtoken": "^9.0.2",
-    "multer": "^2.0.2",
+    "multer": "^2.1.0",
     "mysql2": "^3.9.8",
     "pug": "^3.0.3",
     "sequelize": "^6.37.3"
