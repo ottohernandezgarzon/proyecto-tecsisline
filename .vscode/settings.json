@@ -57,7 +57,8 @@
     "UpdateSQL",
     "UpdateProyect",
     "UpdateCI",
-    " NewRulesCI/CD"
+    " NewRulesCI/CD",
+    "ConfigWorkSpace"
   ],
   "prettier.semi": false,
   "prettier.arrowParens": "avoid"
