@@ -22,13 +22,13 @@ jobs:
       - name: Instalar pnpm
         uses: pnpm/action-setup@v4
         with:
-          version: 9
+          version: 11.7.0
       - name: Use Node.js ${{ matrix.node-version-lst }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version-lst }}
           cache: "pnpm"
       - run: pnpm up && pnpm up -D
-      - run: pnpm ci
+      - run: pnpm install --frozen-lockfile
       - run: pnpm run build --if-present
       - run: pnpm test
