@@ -56,7 +56,8 @@
     "RefactorProject",
     "UpdateSQL",
     "UpdateProyect",
-    "UpdateCI"
+    "UpdateCI",
+    " NewRulesCI/CD"
   ],
   "prettier.semi": false,
   "prettier.arrowParens": "avoid"
