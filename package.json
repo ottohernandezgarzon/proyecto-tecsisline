@@ -4,7 +4,7 @@
   "description": "Proyecto de sena  con tema de tienda virtual ",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node index.js || pnpm run index.js",
     "dev-nodemon": "nodemon index.js -i public\\js\\ -e js,json ",
     "dev": "node --watch index.js ",
     "test": "node --test",
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.1",
+    "pnpm": "^11.7.0",
     "sequelize-cli": "^6.6.2"
   }
 }
