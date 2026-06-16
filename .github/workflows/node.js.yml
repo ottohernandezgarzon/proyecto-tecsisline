@@ -21,12 +21,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js ${{ matrix.node-version-lst }}
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
-          cache: "npm"
-      - run: npm up && npm up -D
-      - run: npm ci
-      - run: npm run build --if-present
-      - run: npm test
+          node-version: ${{ matrix.node-version-lst }}
+          cache: "pnpm"
+      - run: pnpm up && pnpm up -D
+      - run: pnpm ci
+      - run: pnpm run build --if-present
+      - run: pnpm test
